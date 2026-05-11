@@ -30,8 +30,8 @@ O site está hospedado no GitHub Pages e pode ser acessado clicando no link abai
 ---
 
 ## 👥 Integrantes do grupo
-- Leonardo Gabriel  
-- Cristian Rosa  
+- Cristian Rosa
+- Leonardo Gabriel    
 - Matheus Henrique  
 
 ---
