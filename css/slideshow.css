@@ -1,0 +1,148 @@
+.slideshow-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.slideshow {
+    position: relative;
+    width: 1920px;
+    max-width: 100%;
+    height: 750px;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    background: #000;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.slide.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-family: 'Inter Black', sans-serif;
+    font-size: 42px;
+    text-transform: uppercase;
+}
+
+.slide-1 {
+    background: #8c4baf;
+}
+
+.slide-2 {
+    background: #d35400;
+}
+
+.slide-3 {
+    background: #27ae60;
+}
+
+.slide-label {
+    display: inline-block;
+    padding: 12px 24px;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 12px;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.45);
+    color: #ffffff;
+    border: none;
+    font-size: 32px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    padding: 0;
+}
+
+.slide-btn:hover {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.slide-btn.prev {
+    left: 20px;
+}
+
+.slide-btn.next {
+    right: 20px;
+}
+
+/* Indicadores */
+.slide-indicators {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+
+.slide-dot {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin: 0 6px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.slide-dot.active {
+    background: #ffffff;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .slideshow {
+        height: 320px;
+    }
+
+    .slide-btn {
+        width: 42px;
+        height: 42px;
+        font-size: 24px;
+    }
+
+    .slide-dot {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .slideshow {
+        height: 220px;
+        border-radius: 10px;
+    }
+
+    .slide-btn.prev {
+        left: 10px;
+    }
+
+    .slide-btn.next {
+        right: 10px;
+    }
+}
