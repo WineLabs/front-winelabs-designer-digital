@@ -1,73 +1,113 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - Winelabs</title>
+    <meta name="description" content="Entre em contato com a Winelabs para consultoria, projetos e parcerias no setor vitivinícola.">
+    <meta property="og:title" content="Contato — Winelabs">
+    <meta property="og:description" content="Fale com a Winelabs em São Roque, SP.">
+    <meta property="og:image" content="https://enologo-douglas.github.io/front-enologo-designer-digital/assets/og-image.svg">
+    <meta property="og:type" content="website">
+    <title>Contato — Winelabs</title>
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-<header class="header" data-name="Header 1">
+<a href="#main" class="skip-link">Ir para o conteúdo</a>
+
+<header class="header">
     <div class="header-logo">
-        <a href="../index.html"><p>Winelabs</p></a>
+        <a href="../index.html" aria-label="Winelabs — página inicial">Winelabs</a>
     </div>
-
-    <nav class="nav">
-        <div class="nav-item"><a href="../index.html"><p>Home</p></a></div>
-        <div class="nav-item"><a href="sobre.html"><p>Sobre</p></a></div>
-    </nav>
-
-    <nav class="nav">
-        <div class="nav-item"><a href="servicos.html"><p>Serviços</p></a></div>
-        <div class="nav-item"><a href="projetos.html"><p>Projetos</p></a></div>
-    </nav>
-
-    <nav class="nav">
-        <div class="nav-item"><a href="contato.html"><p>Contato</p></a></div>
+    <nav class="header-nav" aria-label="Menu principal">
+        <ul class="nav-list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="contato.html" aria-current="page">Contato</a></li>
+        </ul>
     </nav>
 </header>
 
-<main class="main-content">
+<main id="main" class="main-content main-content--contact">
     <section class="hero-section">
         <h1>Contato</h1>
-        <p>Fale com o Enólogo Douglas para projetos, eventos ou consultoria em vinhos.</p>
+        <p>Fale com a Winelabs para consultoria, novos projetos e parcerias comerciais.</p>
+    </section>
+
+    <section class="contact-section" aria-labelledby="contact-form-title">
+        <h2 id="contact-form-title" class="visually-hidden">Formulário de contato</h2>
+        <form id="contact-form" class="contact-form" data-email="douglas@gmail.com">
+            <div>
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required autocomplete="name">
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+            </div>
+            <div>
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Enviar mensagem</button>
+        </form>
+
+        <div class="contact-quick">
+            <a href="tel:+551140028922">Ligar: (11) 4002-8922</a>
+            <a href="mailto:douglas@gmail.com">E-mail: douglas@gmail.com</a>
+            <a href="https://wa.me/5511999999999" class="contact-quick--whatsapp" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </div>
     </section>
 </main>
 
-<footer class="footer" data-name="Footer 1">
-    <div class="footer-container" data-name="Container">
-        <div class="footer-content" data-name="Content">
-            <div class="footer-company" data-name="Company"><div class="footer-company-text"><p>Winelabs</p></div></div>
-            <div class="footer-slogan"><p>Slogan do Enologo.</p></div>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <p class="footer-company-text">Winelabs</p>
+            <p class="footer-slogan">Acessibilidade e inovação ao mundo do vinho.</p>
         </div>
-
-        <div class="footer-nav" data-name="Nav">
-            <nav class="footer-column links" data-name="Column 2">
-                <div class="footer-column-header" data-name="Header"><div class="footer-column-header-text"><p>Links</p></div></div>
-                <div class="footer-column-item"><a href="../index.html"><p>Home</p></a></div>
-                <div class="footer-column-item"><a href="sobre.html"><p>Sobre</p></a></div>
-                <div class="footer-column-item"><a href="servicos.html"><p>Serviços</p></a></div>
-                <div class="footer-column-item"><a href="projetos.html"><p>Projetos</p></a></div>
-                <div class="footer-column-item"><a href="contato.html"><p>Contato</p></a></div>
+        <div class="footer-nav">
+            <nav class="footer-column links" aria-label="Links do site">
+                <h2 class="footer-column-title">Links</h2>
+                <ul class="footer-column-list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="contato.html" aria-current="page">Contato</a></li>
+                </ul>
             </nav>
-
-            <nav class="footer-column contact" data-name="Column 3">
-                <div class="footer-column-header" data-name="Header"><div class="footer-column-header-text"><p>Contato</p></div></div>
-                <div class="footer-column-item"><p>4002-8922</p></div>
-                <div class="footer-column-item"><p>douglas@gmail.com</p></div>
-                <div class="footer-column-item"><p>São Roque - SP</p></div>
-            </nav>
-
-            <nav class="footer-column social" data-name="Column 4">
-                <div class="footer-column-header" data-name="Header"><div class="footer-column-header-text"><p>Redes Sociais</p></div></div>
-                <nav class="social-links" data-name="Social links">
-                    <a href="https://www.instagram.com/" target="_blank" class="social-link" data-name="image 3"><img alt="Instagram" src="../assets/icons/instagram.png" /></a>
-                    <a href="https://www.facebook.com/" target="_blank" class="social-link-button" data-name="Social link 3"><img alt="Facebook" src="../assets/icons/facebook.png" /></a>
-                    <a href="https://wa.me/5511999999999" target="_blank" class="social-link" data-name="Vector"><img alt="WhatsApp" src="../assets/icons/whatsapp.png" /></a>
-                </nav>
-            </nav>
+            <address class="footer-column contact">
+                <h2 class="footer-column-title">Contato</h2>
+                <ul class="footer-column-list">
+                    <li><a href="tel:+551140028922">(11) 4002-8922</a></li>
+                    <li><a href="mailto:douglas@gmail.com">douglas@gmail.com</a></li>
+                    <li>São Roque — SP</li>
+                </ul>
+            </address>
+            <div class="footer-column social">
+                <h2 class="footer-column-title">Redes Sociais</h2>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                        <img src="../assets/icons/instagram.png" alt="" width="32" height="32">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+                        <img src="../assets/icons/facebook.png" alt="" width="32" height="32">
+                    </a>
+                    <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp">
+                        <img src="../assets/icons/whatsapp.png" alt="" width="32" height="32">
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </footer>
+
+<script src="../js/components/contact.js" defer></script>
 </body>
 </html>

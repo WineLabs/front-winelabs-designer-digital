@@ -1,45 +1,52 @@
-# 🍷 Projeto: Site do Enólogo Douglas
+# Winelabs
 
-## 📌 Sobre o projeto
-Este projeto foi desenvolvido para a disciplina de Designer Digital, ministrada pela professora Adriana.  
+## Sobre o projeto
 
-O objetivo foi criar um site institucional para apresentar o trabalho do enólogo Douglas, destacando seus serviços, conhecimentos sobre vinhos e sua atuação na área.
+Este projeto foi desenvolvido para a disciplina de Designer Digital, ministrada pela professora Adriana.
 
----
-
-## 🔗 Acesse o site
-O site está hospedado no GitHub Pages e pode ser acessado clicando no link abaixo:
-
-👉 *https://enologo-douglas.github.io/front-enologo-designer-digital/*
+O site institucional **Winelabs** apresenta consultoria, design de produtos e enogastronomia — com foco em acessibilidade e inovação ao mundo do vinho, em São Roque, SP.
 
 ---
 
-## 🚀 Tecnologias utilizadas
-- HTML5  
-- CSS3  
-- JavaScript  
+## Acesse o site
+
+O site está hospedado no GitHub Pages:
+
+https://enologo-douglas.github.io/front-enologo-designer-digital/
 
 ---
 
-## 🎯 Funcionalidades
-- Página inicial com apresentação do enólogo  
-- Seção sobre vinhos e especialidades  
-- Layout responsivo  
-- Navegação simples e intuitiva  
+## Tecnologias utilizadas
+
+- HTML5
+- CSS3
+- JavaScript
 
 ---
 
-## 👥 Integrantes do grupo
+## Funcionalidades
+
+- Página inicial com slideshow de destaques
+- Páginas Sobre, Serviços, Projetos e Contato
+- Formulário de contato (envio por e-mail)
+- Layout responsivo e navegação acessível
+
+---
+
+## Integrantes do grupo
+
 - Cristian Rosa
-- Leonardo Gabriel    
-- Matheus Henrique  
+- Leonardo Gabriel
+- Matheus Henrique
 
 ---
 
-## 📚 Disciplina
-Designer Digital – Profª Adriana  
+## Disciplina
+
+Designer Digital – Profª Adriana
 
 ---
 
-## 📌 Observações
+## Observações
+
 Este projeto tem fins acadêmicos e foi desenvolvido como prática de desenvolvimento web.
