@@ -9,11 +9,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const name = form.querySelector('[name="name"]').value.trim();
         const userEmail = form.querySelector('[name="email"]').value.trim();
+        const subjectField = form.querySelector('[name="subject"]').value.trim();
         const message = form.querySelector('[name="message"]').value.trim();
 
-        const subject = encodeURIComponent('Contato Winelabs — ' + name);
+        const subject = encodeURIComponent('Contato Winelabs — ' + (subjectField || name));
         const body = encodeURIComponent(
-            'Nome: ' + name + '\nE-mail: ' + userEmail + '\n\nMensagem:\n' + message
+            'Nome: ' + name + '\nE-mail: ' + userEmail + '\nAssunto: ' + subjectField + '\n\nDescrição:\n' + message
         );
 
         window.location.href = 'mailto:' + email + '?subject=' + subject + '&body=' + body;
