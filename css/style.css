@@ -413,10 +413,13 @@ body {
 
 .footer-container {
     display: flex;
-    flex: 1 0 0;
+    flex: 0 1 auto;
     gap: 83px;
     align-items: flex-start;
-    min-width: 0;
+    justify-content: center;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
     padding-top: 80px;
     position: relative;
 }
@@ -598,6 +601,7 @@ body {
         flex-direction: column;
         gap: 40px;
         align-items: center;
+        width: 100%;
         padding-top: 56px;
     }
 
