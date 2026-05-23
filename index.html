@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
 <a href="#main" class="skip-link">Ir para o conteúdo</a>
@@ -34,7 +35,7 @@
     </nav>
 </header>
 
-<main id="main" class="main-content">
+<main id="main" class="main-content main-content--home">
     <section class="slideshow-section" aria-roledescription="carousel" aria-label="Destaques">
         <div class="slideshow" tabindex="0">
             <div class="slide slide-1 active" aria-hidden="false">
@@ -62,6 +63,51 @@
                 <button type="button" class="slide-dot active" role="tab" aria-selected="true" aria-label="Slide 1 de 3" tabindex="0"></button>
                 <button type="button" class="slide-dot" role="tab" aria-selected="false" aria-label="Slide 2 de 3" tabindex="-1"></button>
                 <button type="button" class="slide-dot" role="tab" aria-selected="false" aria-label="Slide 3 de 3" tabindex="-1"></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-block home-block--grey" aria-labelledby="home-block-1-title">
+        <div class="home-block__inner">
+            <div class="home-block__media home-block__media--stack">
+                <img class="home-stack__back" src="assets/img/paisagem.jpg"
+                    alt="Paisagem de vinhedos" width="320" height="420">
+                <img class="home-stack__front" src="assets/img/uva.jpg"
+                    alt="Uvas em cacho" width="220" height="220">
+            </div>
+            <div class="home-block__content">
+                <h2 id="home-block-1-title">Consultoria empresarial</h2>
+                <p>Diagnóstico, estratégia e acompanhamento para marcas e negócios do setor vitivinícola evoluírem com
+                    método, dados e identidade clara — do planejamento à execução.</p>
+                <a href="pages/servicos.html" class="home-btn home-btn--outline">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-block home-block--white" aria-labelledby="home-block-2-title">
+        <div class="home-block__inner home-block__inner--reverse">
+            <div class="home-block__content">
+                <h2 id="home-block-2-title">Design de produtos</h2>
+                <p>Criação e repaginação de rótulos, embalagens e linhas de produtos com foco em acessibilidade,
+                    inovação e posicionamento de mercado para o universo do vinho.</p>
+                <a href="pages/projetos.html" class="home-btn home-btn--filled">Ver projetos</a>
+            </div>
+            <figure class="home-block__media home-block__media--single">
+                <img src="assets/img/garrafas.jpg" alt="Garrafas de vinho em exposição" width="520" height="400">
+            </figure>
+        </div>
+    </section>
+
+    <section class="home-block home-block--grey" aria-labelledby="home-block-3-title">
+        <div class="home-block__inner">
+            <figure class="home-block__media home-block__media--card">
+                <img src="assets/img/taca.jpg" alt="Taça de vinho em degustação" width="520" height="400">
+            </figure>
+            <div class="home-block__content">
+                <h2 id="home-block-3-title">Consultoria enogastronômica</h2>
+                <p>Degustações guiadas, harmonizações e experiências para eventos, vinícolas e restaurantes — traduzindo
+                    o vinho para diferentes públicos sem perder qualidade.</p>
+                <a href="pages/sobre.html" class="home-btn home-btn--outline">Conheça a Winelabs</a>
             </div>
         </div>
     </section>
