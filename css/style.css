@@ -365,38 +365,10 @@ body {
     border: 0;
 }
 
-.contact-location-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
+.contact-location-note {
     margin-top: 16px;
-}
-
-.contact-location-footer > p {
-    flex: 1;
     font-size: 12px;
     line-height: 1.45;
-    margin: 0;
-}
-
-.contact-location-social {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-.contact-location-social a {
-    display: block;
-    width: 32px;
-    height: 32px;
-}
-
-.contact-location-social img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
 }
 
 /* Footer */
@@ -639,11 +611,6 @@ body {
 
     .contact-cards {
         grid-template-columns: 1fr;
-    }
-
-    .contact-location-footer {
-        flex-direction: column;
-        align-items: flex-start;
     }
 
     .header {
