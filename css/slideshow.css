@@ -7,9 +7,9 @@
     position: relative;
     width: 100%;
     max-width: none;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 21 / 9;
     height: auto;
-    min-height: 220px;
+    min-height: 180px;
     overflow: hidden;
     border-radius: 0;
     background: #000;
