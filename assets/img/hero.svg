@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 600" width="1400" height="600">
+  <rect width="1400" height="600" fill="#f0f0f0"/>
+  <text x="700" y="300" font-size="48" font-weight="bold" text-anchor="middle" dominant-baseline="middle" fill="#666" font-family="Arial, sans-serif">
+    aqui vai uma imagem
+  </text>
+</svg>

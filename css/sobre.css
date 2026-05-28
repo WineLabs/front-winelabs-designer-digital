@@ -1,0 +1,49 @@
+/*Aba Sobre*/
+.titulo-acessibilidade{
+    display: flex;
+    flex-direction: row;
+}
+
+.conteudo-1{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+}
+
+.conteudo-2{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 25px;
+    justify-content: center;
+}
+
+.conteudo-4{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+}
+
+.titulo-nossa-missao{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 259px;
+}
+.blocos{
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+
+.trio-images{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 25px;
+    justify-content: center;
+}
+
+.back-1{
+    width: 1000px;
+}

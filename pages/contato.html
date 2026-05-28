@@ -34,33 +34,72 @@
 </header>
 
 <main id="main" class="main-content main-content--contact">
-    <section class="hero-section">
-        <h1>Contato</h1>
-        <p>Fale com a Winelabs para consultoria, novos projetos e parcerias comerciais.</p>
+    <h1 class="contact-page-title">Nosso Contato</h1>
+
+    <section class="contact-cards" aria-label="Informações de contato">
+        <article class="contact-card">
+            <div class="contact-card-icon" aria-hidden="true"></div>
+            <h2 class="contact-card-title"><a href="tel:+551140028922">(00) 4002-8922</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Quisque faucibus ex sapien vitae pellentesque.</p>
+        </article>
+        <article class="contact-card">
+            <div class="contact-card-icon" aria-hidden="true"></div>
+            <h2 class="contact-card-title"><a href="mailto:douglas@gmail.com">douglas@gmail.com</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Quisque faucibus ex sapien vitae pellentesque.</p>
+        </article>
+        <article class="contact-card">
+            <div class="contact-card-icon" aria-hidden="true"></div>
+            <h2 class="contact-card-title"><a href="#localizacao">Localização</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Quisque faucibus ex sapien vitae pellentesque.</p>
+        </article>
+        <article class="contact-card">
+            <div class="contact-card-icon" aria-hidden="true"></div>
+            <h2 class="contact-card-title"><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">@douglas_enolo</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Quisque faucibus ex sapien vitae pellentesque.</p>
+        </article>
     </section>
 
-    <section class="contact-section" aria-labelledby="contact-form-title">
-        <h2 id="contact-form-title" class="visually-hidden">Formulário de contato</h2>
-        <form id="contact-form" class="contact-form" data-email="douglas@gmail.com">
-            <div>
-                <label for="name">Nome</label>
-                <input type="text" id="name" name="name" required autocomplete="name">
-            </div>
-            <div>
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" required autocomplete="email">
-            </div>
-            <div>
-                <label for="message">Mensagem</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit">Enviar mensagem</button>
-        </form>
+    <section class="contact-panel" aria-label="Formulário e localização">
+        <div class="contact-panel-form">
+            <form id="contact-form" class="contact-form" data-email="douglas@gmail.com">
+                <div class="contact-form-field">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+                </div>
+                <div class="contact-form-field">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required autocomplete="name">
+                </div>
+                <div class="contact-form-field">
+                    <label for="subject">Assunto:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="contact-form-field">
+                    <label for="message">Descrição:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="contact-form-submit">Enviar</button>
+            </form>
+        </div>
 
-        <div class="contact-quick">
-            <a href="tel:+551140028922">Ligar: (11) 4002-8922</a>
-            <a href="mailto:douglas@gmail.com">E-mail: douglas@gmail.com</a>
-            <a href="https://wa.me/5511999999999" class="contact-quick--whatsapp" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <div id="localizacao" class="contact-panel-location">
+            <h2 class="contact-location-title">Nossa Localização</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque.</p>
+            <p>Sem malesuada, imperdiet nunc quis, finibus ex. Duis at dolor sit amet.</p>
+            <div class="contact-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.987912431484!2d-47.13661312388468!3d-23.53293716055008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf0d54817a1725%3A0x3dcff522a27b9b96!2sFaculdade%20de%20Tecnologia%20de%20S%C3%A3o%20Roque!5e0!3m2!1spt-BR!2sbr!4v1779490227968!5m2!1spt-BR!2sbr"
+                    title="Mapa — Faculdade de Tecnologia de São Roque"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <p class="contact-location-note">Quisque faucibus ex sapien vitae pellentesque sem malesuada.</p>
         </div>
     </section>
 </main>
