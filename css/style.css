@@ -214,18 +214,18 @@ body {
 }
 
 .contact-card {
-    background: #e0e0e0;
+    background: #871932;
     border-radius: 14px;
     padding: 28px 20px 24px;
     text-align: center;
 }
-
 .contact-card-icon {
     width: 72px;
     height: 72px;
     margin: 0 auto 20px;
     border-radius: 50%;
-    background: #ffffff;
+    background-size: cover;
+    background-position: center;
 }
 
 .contact-card-title {
@@ -233,6 +233,7 @@ body {
     font-weight: 700;
     margin-bottom: 12px;
     line-height: 1.3;
+    color: #F5F1DE;
 }
 
 .contact-card-title a {
@@ -248,7 +249,7 @@ body {
 .contact-card p {
     font-size: 11px;
     line-height: 1.45;
-    color: var(--color-text);
+    color: #F5F1DE;
 }
 
 .contact-card p + p {
@@ -380,7 +381,7 @@ body {
     padding-left: var(--space-header-x);
     padding-right: var(--space-header-x);
     width: 100%;
-    background-color: var(--color-bg);
+    background-color: #697350;
 }
 
 .footer-container {
@@ -420,7 +421,7 @@ body {
 .footer-company-text {
     font-weight: 600;
     font-size: 42px;
-    color: var(--color-text);
+    color: #F5F1DE;
     letter-spacing: -1.28px;
     line-height: 1.2;
 }
@@ -428,7 +429,7 @@ body {
 .footer-slogan {
     font-weight: 500;
     font-size: 16px;
-    color: var(--color-text-muted);
+    color: #F5F1DE;
     letter-spacing: -0.08px;
     line-height: var(--line-height-body);
 }
@@ -465,7 +466,7 @@ body {
 .footer-column-title {
     font-size: 24px;
     font-weight: 600;
-    color: var(--color-text);
+    color: #F5F1DE;
     letter-spacing: -0.12px;
     padding-bottom: 8px;
     line-height: 1.2;
@@ -480,7 +481,7 @@ body {
 }
 
 .footer-column-list a {
-    color: var(--color-text-muted);
+    color: #F5F1DE;
     text-decoration: none;
     font-weight: 500;
     font-size: 16px;
@@ -494,7 +495,7 @@ body {
 
 .footer-column-list li {
     font-size: 16px;
-    color: var(--color-text-muted);
+    color: #F5F1DE;
     font-weight: 500;
     line-height: var(--line-height-body);
 }
