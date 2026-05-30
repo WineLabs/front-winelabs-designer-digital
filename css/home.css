@@ -1,4 +1,4 @@
-/* Home — blocos abaixo do slideshow */
+/* Página inicial (home) */
 
 .main-content--home {
     flex-direction: column;
@@ -9,13 +9,68 @@
     gap: 0;
 }
 
-.main-content--home .slideshow-section {
-    padding-bottom: 0;
+.hero-image {
+    width: 100%;
+    margin: 0;
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 21 / 9;
+    object-fit: cover;
 }
 
 .home-block {
     width: 100%;
     padding: 72px var(--space-header-x);
+}
+
+.home-block--wine {
+    background: var(--color-wine-block);
+    border-top: 1px solid var(--color-bg);
+    border-bottom: 1px solid var(--color-bg);
+}
+
+.home-block--wine .home-block__content h2,
+.home-block--wine .home-block__content p {
+    color: var(--color-bg);
+}
+
+.home-block--white .home-btn {
+    background: var(--color-wine-block);
+    color: var(--color-bg);
+    border: 1px solid var(--color-wine-block);
+}
+
+.home-block--white .home-btn:hover,
+.home-block--white .home-btn:focus-visible {
+    background: var(--color-wine-dark);
+    border-color: var(--color-wine-dark);
+    color: var(--color-bg);
+}
+
+.home-block--wine .home-btn {
+    background: var(--color-footer);
+    color: var(--color-bg);
+    border: 1px solid var(--color-footer);
+}
+
+.home-block--wine .home-btn:hover,
+.home-block--wine .home-btn:focus-visible {
+    background: var(--color-footer-dark);
+    border-color: var(--color-footer-dark);
+    color: var(--color-bg);
+}
+
+.home-block--wine .home-stack__front {
+    border-color: #ffffff;
+}
+
+.home-block--wine .home-block__media--card {
+    background: #ffffff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 .home-block--grey {
@@ -64,29 +119,6 @@
     text-decoration: none;
     border-radius: 4px;
     transition: background 0.2s, color 0.2s, border-color 0.2s;
-}
-
-.home-btn--outline {
-    background: var(--color-bg);
-    color: var(--color-text);
-    border: 1px solid var(--color-text);
-}
-
-.home-btn--outline:hover,
-.home-btn--outline:focus-visible {
-    background: var(--color-text);
-    color: var(--color-bg);
-}
-
-.home-btn--filled {
-    background: #b8b8b8;
-    color: var(--color-text);
-    border: 1px solid transparent;
-}
-
-.home-btn--filled:hover,
-.home-btn--filled:focus-visible {
-    background: #9a9a9a;
 }
 
 /* Imagens sobrepostas (bloco 1) */
