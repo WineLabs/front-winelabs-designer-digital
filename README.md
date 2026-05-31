@@ -22,20 +22,6 @@ https://enologo-douglas.github.io/front-enologo-designer-digital/
 - CSS3
 - JavaScript
 
-### Organização dos CSS
-
-| Arquivo | Uso |
-|---------|-----|
-| `css/global.css` | Variáveis, reset e layout base (todas as páginas) |
-| `css/header-footer.css` | Cabeçalho e rodapé (todas as páginas) |
-| `css/home.css` | Página inicial (`index.html`) |
-| `css/sobre.css` | Página Sobre |
-| `css/servicos.css` | Página Serviços |
-| `css/projetos.css` | Página Projetos |
-| `css/contato.css` | Página Contato |
-
-Ordem de carregamento: `global.css` → `header-footer.css` → CSS da página.
-
 ---
 
 ## Funcionalidades
