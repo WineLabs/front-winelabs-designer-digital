@@ -12,8 +12,7 @@ O site institucional **Winelabs** apresenta consultoria, design de produtos e en
 
 O site está hospedado no GitHub Pages:
 
-[
-](https://winelabs.github.io/front-winelabs-designer-digital/)
+[(https://winelabs.github.io/front-winelabs-designer-digital/)]
 ---
 
 ## Tecnologias utilizadas
