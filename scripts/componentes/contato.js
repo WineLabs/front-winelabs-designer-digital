@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('contact-form');
+    const form = document.getElementById('formulario-contato');
     if (!form) return;
 
     const email = form.dataset.email || 'douglas@gmail.com';

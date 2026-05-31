@@ -1,17 +1,17 @@
-/* Header e footer — layout global do site */
+/* Cabeçalho e rodapé — layout global do site */
 
-/* Header */
-.header {
+/* Cabeçalho */
+.cabecalho {
     display: flex;
     gap: 34px;
     align-items: center;
-    padding: var(--space-header-y) var(--space-header-x);
+    padding: 24px 64px;
     width: 100%;
     border-bottom: 2px solid #ffffff;
-    color: var(--color-text);
+    color: #000000;
 }
 
-.header-logo {
+.cabecalho-logo {
     flex: 1 0 0;
     font-weight: 900;
     font-size: 42px;
@@ -20,16 +20,16 @@
     line-height: 1.1;
 }
 
-.header-logo a {
+.cabecalho-logo a {
     color: inherit;
     text-decoration: none;
 }
 
-.header-nav {
+.cabecalho-menu {
     flex-shrink: 0;
 }
 
-.nav-list {
+.lista-menu {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
@@ -40,38 +40,38 @@
     letter-spacing: -0.08px;
 }
 
-.nav-list a {
+.lista-menu a {
     color: inherit;
     text-decoration: none;
-    line-height: var(--line-height-body);
+    line-height: 1.45;
 }
 
-.nav-list a:hover,
-.nav-list a:focus-visible {
-    color: var(--color-wine);
+.lista-menu a:hover,
+.lista-menu a:focus-visible {
+    color: #5c1a1a;
 }
 
-.nav-list a[aria-current='page'] {
+.lista-menu a[aria-current='page'] {
     font-weight: 600;
-    color: var(--color-wine);
+    color: #5c1a1a;
 }
 
-/* Footer */
-.footer {
+/* Rodapé */
+.rodape {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 48px;
     padding-bottom: 32px;
-    padding-left: var(--space-header-x);
-    padding-right: var(--space-header-x);
+    padding-left: 64px;
+    padding-right: 64px;
     width: 100%;
     border-top: 2px solid #ffffff;
     background-color: #697350;
 }
 
-.footer-container {
+.rodape-estrutura {
     display: flex;
     flex: 0 1 auto;
     gap: 83px;
@@ -84,18 +84,18 @@
     position: relative;
 }
 
-.footer-container::before {
+.rodape-estrutura::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    border-top: 1px solid var(--color-border);
+    border-top: 1px solid #0000001A;
     pointer-events: none;
 }
 
-.footer-content {
+.rodape-conteudo {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -105,7 +105,7 @@
     min-height: 100px;
 }
 
-.footer-company-text {
+.rodape-texto-empresa {
     font-weight: 600;
     font-size: 42px;
     color: #F5F1DE;
@@ -113,23 +113,23 @@
     line-height: 1.2;
 }
 
-.footer-slogan {
+.rodape-frase {
     font-weight: 500;
     font-size: 16px;
     color: #F5F1DE;
     letter-spacing: -0.08px;
-    line-height: var(--line-height-body);
+    line-height: 1.45;
 }
 
-.footer-credit {
+.rodape-credito {
     font-weight: 500;
     font-size: 14px;
     color: rgba(245, 241, 222, 0.78);
     text-align: center;
-    line-height: var(--line-height-body);
+    line-height: 1.45;
 }
 
-.footer-nav {
+.rodape-menu {
     display: flex;
     gap: 31px;
     align-items: flex-start;
@@ -137,7 +137,7 @@
     width: 678px;
 }
 
-.footer-column {
+.rodape-coluna {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -145,20 +145,20 @@
     flex-shrink: 0;
 }
 
-.footer-column.links {
+.rodape-coluna.coluna-navegacao {
     width: 130px;
 }
 
-.footer-column.contact {
+.rodape-coluna.coluna-contato {
     width: 180px;
     font-style: normal;
 }
 
-.footer-column.social {
+.rodape-coluna.coluna-redes {
     width: 150px;
 }
 
-.footer-column-title {
+.rodape-titulo-coluna {
     font-size: 24px;
     font-weight: 600;
     color: #F5F1DE;
@@ -167,7 +167,7 @@
     line-height: 1.2;
 }
 
-.footer-column-list {
+.rodape-lista-coluna {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -175,33 +175,33 @@
     width: 100%;
 }
 
-.footer-column-list a {
+.rodape-lista-coluna a {
     color: #F5F1DE;
     text-decoration: none;
     font-weight: 500;
     font-size: 16px;
-    line-height: var(--line-height-body);
+    line-height: 1.45;
 }
 
-.footer-column-list a:hover,
-.footer-column-list a:focus-visible {
-    color: var(--color-wine);
+.rodape-lista-coluna a:hover,
+.rodape-lista-coluna a:focus-visible {
+    color: #5c1a1a;
 }
 
-.footer-column-list li {
+.rodape-lista-coluna li {
     font-size: 16px;
     color: #F5F1DE;
     font-weight: 500;
-    line-height: var(--line-height-body);
+    line-height: 1.45;
 }
 
-.social-links {
+.redes-sociais {
     display: flex;
     gap: 24px;
     align-items: center;
 }
 
-.social-link {
+.rede-social {
     position: relative;
     flex-shrink: 0;
     width: 32px;
@@ -209,43 +209,43 @@
     display: inline-block;
 }
 
-.social-link img {
+.rede-social img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
 @media (max-width: 900px) {
-    .header {
+    .cabecalho {
         flex-wrap: wrap;
         gap: 18px;
         padding: 20px 32px;
     }
 
-    .header-logo {
+    .cabecalho-logo {
         font-size: 36px;
         width: 100%;
         text-align: center;
     }
 
-    .header-nav {
+    .cabecalho-menu {
         width: 100%;
     }
 
-    .nav-list {
+    .lista-menu {
         flex-wrap: wrap;
         justify-content: center;
         gap: 18px;
         width: 100%;
     }
 
-    .footer {
+    .rodape {
         padding-left: 32px;
         padding-right: 32px;
         gap: 40px;
     }
 
-    .footer-container {
+    .rodape-estrutura {
         flex-direction: column;
         gap: 40px;
         align-items: center;
@@ -253,59 +253,59 @@
         padding-top: 56px;
     }
 
-    .footer-content {
+    .rodape-conteudo {
         width: 100%;
         max-width: 560px;
         align-items: center;
         text-align: center;
     }
 
-    .footer-nav {
+    .rodape-menu {
         flex-direction: column;
         width: 100%;
         gap: 32px;
         align-items: center;
     }
 
-    .footer-column {
+    .rodape-coluna {
         width: 100%;
         align-items: center;
         text-align: center;
     }
 
-    .footer-column.links,
-    .footer-column.contact,
-    .footer-column.social {
+    .rodape-coluna.coluna-navegacao,
+    .rodape-coluna.coluna-contato,
+    .rodape-coluna.coluna-redes {
         width: 100%;
     }
 }
 
 @media (max-width: 640px) {
-    .header {
+    .cabecalho {
         padding: 16px 20px;
     }
 
-    .header-logo {
+    .cabecalho-logo {
         font-size: 28px;
     }
 
-    .nav-list {
+    .lista-menu {
         gap: 12px;
     }
 
-    .footer {
+    .rodape {
         padding-bottom: 24px;
     }
 
-    .footer-container {
+    .rodape-estrutura {
         padding-top: 40px;
     }
 
-    .social-links {
+    .redes-sociais {
         gap: 16px;
     }
 
-    .social-link {
+    .rede-social {
         width: 28px;
         height: 28px;
     }
