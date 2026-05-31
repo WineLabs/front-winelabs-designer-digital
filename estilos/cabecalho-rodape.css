@@ -7,7 +7,7 @@
     align-items: center;
     padding: 24px 64px;
     width: 100%;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid #F5F1DE;
     background-color: #697350;
     color: #F5F1DE;
 }
@@ -68,7 +68,6 @@
     padding-left: 64px;
     padding-right: 64px;
     width: 100%;
-    border-top: 2px solid #ffffff;
     background-color: #697350;
 }
 
