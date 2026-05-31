@@ -1,0 +1,225 @@
+/* Página inicial */
+
+.conteudo-principal--inicio {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 0;
+    min-height: auto;
+    gap: 0;
+}
+
+.imagem-destaque {
+    width: 100%;
+    margin: 0;
+    border-bottom: 2px solid #ffffff;
+}
+
+.imagem-destaque img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 21 / 9;
+    object-fit: cover;
+    object-position: center 58%;
+}
+
+.bloco-inicio {
+    width: 100%;
+    padding: 72px 64px;
+}
+
+.bloco-inicio--vinho {
+    background: #871932;
+    border-top: 1px solid #F5F1DE;
+    border-bottom: 1px solid #F5F1DE;
+}
+
+.bloco-inicio--vinho .bloco-inicio__conteudo h2,
+.bloco-inicio--vinho .bloco-inicio__conteudo p {
+    color: #F5F1DE;
+}
+
+.bloco-inicio--claro .botao-inicio {
+    background: #871932;
+    color: #F5F1DE;
+    border: 1px solid #871932;
+}
+
+.bloco-inicio--claro .botao-inicio:hover,
+.bloco-inicio--claro .botao-inicio:focus-visible {
+    background: #4a1515;
+    border-color: #4a1515;
+    color: #F5F1DE;
+}
+
+.bloco-inicio--vinho .botao-inicio {
+    background: #697350;
+    color: #F5F1DE;
+    border: 1px solid #697350;
+}
+
+.bloco-inicio--vinho .botao-inicio:hover,
+.bloco-inicio--vinho .botao-inicio:focus-visible {
+    background: #556042;
+    border-color: #556042;
+    color: #F5F1DE;
+}
+
+.bloco-inicio--vinho .pilha-inicio__frente {
+    border-color: #ffffff;
+}
+
+.bloco-inicio--vinho .bloco-inicio__midia--cartao {
+    background: #ffffff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.bloco-inicio--claro {
+    background: #F5F1DE;
+}
+
+.bloco-inicio__interno {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bloco-inicio__interno--invertido .bloco-inicio__conteudo {
+    order: -1;
+}
+
+.bloco-inicio__conteudo h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+}
+
+.bloco-inicio__conteudo p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000000B3;
+    margin-bottom: 28px;
+    max-width: 480px;
+}
+
+.botao-inicio {
+    display: inline-block;
+    padding: 12px 28px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+/* Imagens sobrepostas (bloco 1) */
+.bloco-inicio__midia--sobreposta {
+    position: relative;
+    min-height: 380px;
+    max-width: 420px;
+    justify-self: center;
+    width: 100%;
+}
+
+.pilha-inicio__fundo {
+    display: block;
+    width: 72%;
+    max-width: 280px;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    background: #d8d8d8;
+    border: 5px solid #ffffff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.pilha-inicio__frente {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 52%;
+    max-width: 220px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    background: #d0d0d0;
+    border: 5px solid #ffffff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Imagem única à direita (bloco 2) */
+.bloco-inicio__midia--unica {
+    margin: 0;
+    background: #ffffff;
+    border: 5px solid #ffffff;
+    aspect-ratio: 4 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.bloco-inicio__midia--unica img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Imagem em card branco à esquerda (bloco 3) */
+.bloco-inicio__midia--cartao {
+    margin: 0;
+    background: #ffffff;
+    border: 5px solid #ffffff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    aspect-ratio: 4 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.bloco-inicio__midia--cartao img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 42%;
+}
+
+@media (max-width: 900px) {
+    .bloco-inicio {
+        padding: 48px 32px;
+    }
+
+    .bloco-inicio__interno {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .bloco-inicio__interno--invertido .bloco-inicio__conteudo {
+        order: 0;
+    }
+
+    .bloco-inicio__midia--sobreposta {
+        min-height: 320px;
+        max-width: 420px;
+    }
+
+    .bloco-inicio__conteudo p {
+        max-width: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .bloco-inicio {
+        padding: 40px 20px;
+    }
+
+    .bloco-inicio__conteudo h2 {
+        font-size: 26px;
+    }
+}

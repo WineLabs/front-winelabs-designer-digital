@@ -1,0 +1,90 @@
+/* Página sobre */
+
+.conteudo-principal--pagina {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 48px;
+}
+
+.conteudo-pagina {
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.conteudo-pagina h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.conteudo-pagina h2:first-child {
+    margin-top: 0;
+}
+
+.conteudo-pagina p,
+.conteudo-pagina li {
+    font-size: 18px;
+    color: #000000B3;
+    line-height: 1.6;
+}
+
+.conteudo-pagina ul {
+    padding-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Layout específico da aba Sobre */
+.titulo-acessibilidade{
+    display: flex;
+    flex-direction: row;
+}
+
+.conteudo-1{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+}
+
+.conteudo-2{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 25px;
+    justify-content: center;
+}
+
+.conteudo-4{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+}
+
+.titulo-nossa-missao{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 259px;
+}
+.blocos{
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+
+.trio-imagens{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 25px;
+    justify-content: center;
+}
+
+.fundo-1{
+    width: 1000px;
+}
