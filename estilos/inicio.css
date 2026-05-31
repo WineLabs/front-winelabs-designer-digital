@@ -12,7 +12,7 @@
 .imagem-destaque {
     width: 100%;
     margin: 0;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 1px solid #F5F1DE;
 }
 
 .imagem-destaque img {
@@ -31,7 +31,6 @@
 
 .bloco-inicio--vinho {
     background: #871932;
-    border-top: 1px solid #F5F1DE;
     border-bottom: 1px solid #F5F1DE;
 }
 
