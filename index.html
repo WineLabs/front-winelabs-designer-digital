@@ -6,113 +6,132 @@
     <meta name="description" content="Winelabs — acessibilidade e inovação ao mundo do vinho. Consultoria, design de produtos e enogastronomia em São Roque, SP.">
     <meta property="og:title" content="Winelabs">
     <meta property="og:description" content="Acessibilidade e inovação ao mundo do vinho. Consultoria e projetos para o setor vitivinícola.">
-    <meta property="og:image" content="https://enologo-douglas.github.io/front-enologo-designer-digital/assets/og-image.svg">
+    <meta property="og:image" content="https://enologo-douglas.github.io/front-enologo-designer-digital/recursos/imagens/destaque-vinhedo-winelab.png">
     <meta property="og:type" content="website">
     <title>Winelabs</title>
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="recursos/icone-site.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="estilos/geral.css">
+    <link rel="stylesheet" href="estilos/cabecalho-rodape.css">
+    <link rel="stylesheet" href="estilos/inicio.css">
 </head>
 <body>
-<a href="#main" class="skip-link">Ir para o conteúdo</a>
+<a href="#main" class="atalho-conteudo">Ir para o conteúdo</a>
 
-<header class="header">
-    <div class="header-logo">
+<header class="cabecalho">
+    <div class="cabecalho-logo">
         <a href="index.html" aria-label="Winelabs — página inicial">Winelabs</a>
     </div>
-    <nav class="header-nav" aria-label="Menu principal">
-        <ul class="nav-list">
+    <nav class="cabecalho-menu" aria-label="Menu principal">
+        <ul class="lista-menu">
             <li><a href="index.html" aria-current="page">Home</a></li>
-            <li><a href="pages/sobre.html">Sobre</a></li>
-            <li><a href="pages/servicos.html">Serviços</a></li>
-            <li><a href="pages/projetos.html">Projetos</a></li>
-            <li><a href="pages/contato.html">Contato</a></li>
+            <li><a href="paginas/sobre.html">Sobre</a></li>
+            <li><a href="paginas/servicos.html">Serviços</a></li>
+            <li><a href="paginas/projetos.html">Projetos</a></li>
+            <li><a href="paginas/contato.html">Contato</a></li>
         </ul>
     </nav>
 </header>
 
-<main id="main" class="main-content">
-    <section class="slideshow-section" aria-roledescription="carousel" aria-label="Destaques">
-        <div class="slideshow" tabindex="0">
-            <div class="slide slide-1 active" aria-hidden="false">
-                <span class="slide-label">Consultoria empresarial</span>
-            </div>
-            <div class="slide slide-2" aria-hidden="true">
-                <span class="slide-label">Design de produtos</span>
-            </div>
-            <div class="slide slide-3" aria-hidden="true">
-                <span class="slide-label">Consultoria enogastronômica</span>
-            </div>
+<main id="main" class="conteudo-principal conteudo-principal--inicio">
+    <figure class="imagem-destaque">
+        <img src="recursos/imagens/destaque-vinhedo-winelab.png" alt="Vinhedo ao pôr do sol com taça de vinho, uvas e marca Winelab" width="1536" height="1024">
+    </figure>
 
-            <button type="button" class="slide-btn prev" aria-label="Slide anterior">
-                <svg class="slide-btn-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
-                    <path d="M15 6 9 12 15 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </button>
-            <button type="button" class="slide-btn next" aria-label="Próximo slide">
-                <svg class="slide-btn-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
-                    <path d="M9 6 15 12 9 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </button>
+    <section class="bloco-inicio bloco-inicio--vinho" aria-labelledby="titulo-bloco-inicio-1">
+        <div class="bloco-inicio__interno">
+            <div class="bloco-inicio__midia--sobreposta">
+                <img class="pilha-inicio__fundo" src="recursos/imagens/vinhedo-por-do-sol.png"
+                    alt="Paisagem de vinhedos" width="320" height="420">
+                <img class="pilha-inicio__frente" src="recursos/imagens/vinho-tinto-servido-na-taca.png"
+                    alt="Vinho tinto sendo servido em uma taça" width="220" height="220">
+            </div>
+            <div class="bloco-inicio__conteudo">
+                <h2 id="titulo-bloco-inicio-1">Consultoria empresarial</h2>
+                <p>Diagnóstico, estratégia e acompanhamento para marcas e negócios do setor vitivinícola evoluírem com
+                    método, dados e identidade clara — do planejamento à execução.</p>
+                <a href="paginas/servicos.html" class="botao-inicio">Saiba mais</a>
+            </div>
+        </div>
+    </section>
 
-            <div class="slide-indicators" role="tablist" aria-label="Selecionar slide">
-                <button type="button" class="slide-dot active" role="tab" aria-selected="true" aria-label="Slide 1 de 3" tabindex="0"></button>
-                <button type="button" class="slide-dot" role="tab" aria-selected="false" aria-label="Slide 2 de 3" tabindex="-1"></button>
-                <button type="button" class="slide-dot" role="tab" aria-selected="false" aria-label="Slide 3 de 3" tabindex="-1"></button>
+    <section class="bloco-inicio bloco-inicio--claro" aria-labelledby="titulo-bloco-inicio-2">
+        <div class="bloco-inicio__interno bloco-inicio__interno--invertido">
+            <div class="bloco-inicio__conteudo">
+                <h2 id="titulo-bloco-inicio-2">Design de produtos</h2>
+                <p>Criação e repaginação de rótulos, embalagens e linhas de produtos com foco em acessibilidade,
+                    inovação e posicionamento de mercado para o universo do vinho.</p>
+                <a href="paginas/projetos.html" class="botao-inicio">Ver projetos</a>
+            </div>
+            <figure class="bloco-inicio__midia--unica">
+                <img src="recursos/imagens/garrafa-cabernet-taca-uvas.png" alt="Garrafa de Cabernet Sauvignon com taça e uvas" width="520" height="400">
+            </figure>
+        </div>
+    </section>
+
+    <section class="bloco-inicio bloco-inicio--vinho" aria-labelledby="titulo-bloco-inicio-3">
+        <div class="bloco-inicio__interno">
+            <figure class="bloco-inicio__midia--cartao">
+                <img src="recursos/imagens/taca-vinho-vinhedo-harmonizacao.png" alt="Taça de vinho com uvas e queijo diante de um vinhedo" width="520" height="400">
+            </figure>
+            <div class="bloco-inicio__conteudo">
+                <h2 id="titulo-bloco-inicio-3">Consultoria enogastronômica</h2>
+                <p>Degustações guiadas, harmonizações e experiências para eventos, vinícolas e restaurantes — traduzindo
+                    o vinho para diferentes públicos sem perder qualidade.</p>
+                <a href="paginas/sobre.html" class="botao-inicio">Conheça a Winelabs</a>
             </div>
         </div>
     </section>
 </main>
 
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-content">
-            <p class="footer-company-text">Winelabs</p>
-            <p class="footer-slogan">Acessibilidade e inovação ao mundo do vinho.</p>
+<footer class="rodape">
+    <div class="rodape-estrutura">
+        <div class="rodape-conteudo">
+            <p class="rodape-texto-empresa">Winelabs</p>
+            <p class="rodape-frase">Acessibilidade e inovação ao mundo do vinho.</p>
         </div>
 
-        <div class="footer-nav">
-            <nav class="footer-column links" aria-label="Links do site">
-                <h2 class="footer-column-title">Links</h2>
-                <ul class="footer-column-list">
+        <div class="rodape-menu">
+            <nav class="rodape-coluna coluna-navegacao" aria-label="Links do site">
+                <h2 class="rodape-titulo-coluna">Links</h2>
+                <ul class="rodape-lista-coluna">
                     <li><a href="index.html" aria-current="page">Home</a></li>
-                    <li><a href="pages/sobre.html">Sobre</a></li>
-                    <li><a href="pages/servicos.html">Serviços</a></li>
-                    <li><a href="pages/projetos.html">Projetos</a></li>
-                    <li><a href="pages/contato.html">Contato</a></li>
+                    <li><a href="paginas/sobre.html">Sobre</a></li>
+                    <li><a href="paginas/servicos.html">Serviços</a></li>
+                    <li><a href="paginas/projetos.html">Projetos</a></li>
+                    <li><a href="paginas/contato.html">Contato</a></li>
                 </ul>
             </nav>
 
-            <address class="footer-column contact">
-                <h2 class="footer-column-title">Contato</h2>
-                <ul class="footer-column-list">
+            <address class="rodape-coluna coluna-contato">
+                <h2 class="rodape-titulo-coluna">Contato</h2>
+                <ul class="rodape-lista-coluna">
                     <li><a href="tel:+551140028922">(11) 4002-8922</a></li>
                     <li><a href="mailto:douglas@gmail.com">douglas@gmail.com</a></li>
                     <li>São Roque — SP</li>
                 </ul>
             </address>
 
-            <div class="footer-column social">
-                <h2 class="footer-column-title">Redes Sociais</h2>
-                <div class="social-links">
-                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
-                        <img src="assets/icons/instagram.png" alt="" width="32" height="32">
+            <div class="rodape-coluna coluna-redes">
+                <h2 class="rodape-titulo-coluna">Redes Sociais</h2>
+                <div class="redes-sociais">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="rede-social" aria-label="Instagram">
+                        <img src="recursos/icones/instagram.png" alt="" width="32" height="32">
                     </a>
-                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
-                        <img src="assets/icons/facebook.png" alt="" width="32" height="32">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="rede-social" aria-label="Facebook">
+                        <img src="recursos/icones/facebook.png" alt="" width="32" height="32">
                     </a>
-                    <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp">
-                        <img src="assets/icons/whatsapp.png" alt="" width="32" height="32">
+                    <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="rede-social" aria-label="WhatsApp">
+                        <img src="recursos/icones/whatsapp.png" alt="" width="32" height="32">
                     </a>
                 </div>
             </div>
         </div>
     </div>
+    <p class="rodape-credito">&copy; 2026 Leonardo Gabriel</p>
 </footer>
 
-<script src="js/components/slideshow.js" defer></script>
 </body>
 </html>

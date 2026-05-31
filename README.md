@@ -24,15 +24,6 @@ https://enologo-douglas.github.io/front-enologo-designer-digital/
 
 ---
 
-## Funcionalidades
-
-- Página inicial com slideshow de destaques
-- Páginas Sobre, Serviços, Projetos e Contato
-- Formulário de contato (envio por e-mail)
-- Layout responsivo e navegação acessível
-
----
-
 ## Integrantes do grupo
 
 - Cristian Rosa
