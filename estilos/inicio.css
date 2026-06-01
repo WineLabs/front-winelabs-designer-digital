@@ -13,6 +13,8 @@
     width: 100%;
     margin: 0;
     border-bottom: 1px solid #F5F1DE;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .imagem-destaque img {
@@ -22,6 +24,7 @@
     aspect-ratio: 21 / 9;
     object-fit: cover;
     object-position: center 58%;
+    -webkit-user-drag: none;
 }
 
 .bloco-inicio {
