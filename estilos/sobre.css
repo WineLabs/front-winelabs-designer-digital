@@ -6,14 +6,8 @@
     gap: 48px;
 }
 
-.conteudo-pagina {
-    max-width: 720px;
-    width: 100%;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.conteudo-pagina h2 {
+.conteudo-pagina h2,
+.conteudo-pagina .conteudo-pagina__titulo {
     font-size: 24px;
     font-weight: 600;
     margin-top: 32px;
@@ -21,7 +15,8 @@
     line-height: 1.3;
 }
 
-.conteudo-pagina h2:first-child {
+.conteudo-pagina h2:first-child,
+.conteudo-pagina .conteudo-pagina__titulo:first-child {
     margin-top: 0;
 }
 
