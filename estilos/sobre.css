@@ -1,9 +1,10 @@
 /* Página sobre */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 .conteudo-principal--pagina {
     flex-direction: column;
     align-items: stretch;
@@ -46,35 +47,36 @@
 /* Layout específico da aba Sobre */
 
 
-.conteudo-1{
+.conteudo-1 {
     display: flex;
     flex-direction: row;
     gap: 25px;
     justify-content: center;
 }
 
-.conteudo-2{
+.conteudo-2 {
     display: flex;
     flex-direction: row-reverse;
     gap: 25px;
     justify-content: center;
 }
 
-.conteudo-4{
+.conteudo-4 {
     display: flex;
     flex-direction: row;
-    gap: 25px;
-    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
 }
 
-.titulo-nossa-missao{
+.titulo-nossa-missao {
     display: flex;
     flex-direction: row-reverse;
     margin: 259px;
 }
 
 
-.trio-imagens{
+.trio-imagens {
     display: flex;
     gap: 20px;
     justify-content: space-between;
@@ -88,7 +90,7 @@
     object-fit: cover;
 }
 
-.banner-vermelho-2 .img{
+.banner-vermelho-2 .img {
     width: 31%;
     height: auto;
     background-color: #ffffff;
@@ -96,21 +98,22 @@
     box-sizing: border-box;
     object-fit: contain;
 }
-.banner-vermelho-1{
+
+.banner-vermelho-1 {
     background-color: #871932;
     padding: 60px 20px;
     width: 100%;
     box-sizing: border-box;
 }
 
-.banner-vermelho-2{
+.banner-vermelho-2 {
     background-color: #871932;
     padding: 60px 20px;
     width: 100%;
     box-sizing: border-box;
 }
 
-.banner-vermelho-1 .blocos{
+.banner-vermelho-1 .blocos {
     max-width: 1150px;
     width: 100%;
     margin: 0 auto;
@@ -121,7 +124,7 @@
     gap: 40px;
 }
 
-.banner-vermelho-2 .blocos{
+.banner-vermelho-2 .blocos {
     max-width: 1150px;
     width: 100%;
     margin: 0 auto;
@@ -130,7 +133,7 @@
     gap: 40px;
 }
 
-.banner-bege-1 .blocos{
+.banner-bege-1 .blocos {
     max-width: 1150px;
     width: 100%;
     margin: 0 auto;
@@ -141,31 +144,31 @@
     gap: 40px;
 }
 
-.conteudo-texto-1{
+.conteudo-texto-1 {
     flex: 1;
     max-width: 600px;
     color: #f5f1de;
 }
 
-.conteudo-texto-2{
+.conteudo-texto-2 {
     flex: 1;
     max-width: 600px;
     color: #000000;
 }
 
-.titulo-acessibilidade{
+.titulo-acessibilidade {
     font-size: 2.5rem;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
-.titulo-move{
+.titulo-move {
     font-size: 2.5rem;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
-.titulo-trio{
+.titulo-trio {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -185,12 +188,12 @@
     border-top: 2px solid #ffffff;
 }
 
-.conteudo-texto-1 p{
+.conteudo-texto-1 p {
     font-size: 1.1rem;
     line-height: 1.6;
 }
 
-.image-uva img{
+.image-uva img {
     max-width: 400px;
     width: 100%;
     height: auto;
@@ -199,21 +202,24 @@
     display: block;
 }
 
-.banner-bege-1{
+.banner-bege-1 {
     background-color: #F5F1DE;
     padding: 60px 20px;
     width: 100%;
     box-sizing: border-box;
 }
 
-.lista-texto{
+.lista-texto {
     text-align: center;
-}/* Página sobre */
-*{
+}
+
+/* Página sobre */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 .conteudo-principal--pagina {
     flex-direction: column;
     align-items: stretch;
@@ -256,38 +262,38 @@
 /* Layout específico da aba Sobre */
 
 
-.conteudo-1{
+.conteudo-1 {
     display: flex;
     flex-direction: row;
     gap: 25px;
     justify-content: center;
 }
 
-.conteudo-2{
+.conteudo-2 {
     display: flex;
     flex-direction: row-reverse;
     gap: 25px;
     justify-content: center;
 }
 
-.conteudo-4{
+.conteudo-4 {
     display: flex;
     flex-direction: row;
     gap: 25px;
     justify-content: center;
 }
 
-.titulo-nossa-missao{
+.titulo-nossa-missao {
     display: flex;
     flex-direction: row-reverse;
     margin: 259px;
 }
 
 
-.trio-imagens{
+.trio-imagens {
     display: flex;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .trio-imagens img {
@@ -296,9 +302,11 @@
     height: auto;
     background-color: #ffffff;
     object-fit: cover;
+    border-radius: 12px;
+
 }
 
-.banner-vermelho-2 .img{
+.banner-vermelho-2 .img {
     width: 31%;
     height: auto;
     background-color: #ffffff;
@@ -306,21 +314,22 @@
     box-sizing: border-box;
     object-fit: contain;
 }
-.banner-vermelho-1{
+
+.banner-vermelho-1 {
     background-color: #871932;
     padding: 60px 20px;
     width: 100%;
     box-sizing: border-box;
 }
 
-.banner-vermelho-2{
+.banner-vermelho-2 {
     background-color: #871932;
     padding: 60px 20px;
     width: 100%;
     box-sizing: border-box;
 }
 
-.banner-vermelho-1 .blocos{
+.banner-vermelho-1 .blocos {
     max-width: 1150px;
     width: 100%;
     margin: 0 auto;
@@ -331,7 +340,7 @@
     gap: 40px;
 }
 
-.banner-vermelho-2 .blocos{
+.banner-vermelho-2 .blocos {
     max-width: 1150px;
     width: 100%;
     margin: 0 auto;
@@ -340,7 +349,7 @@
     gap: 40px;
 }
 
-.banner-bege-1 .blocos{
+.banner-bege-1 .blocos {
     max-width: 1150px;
     width: 100%;
     margin: 0 auto;
@@ -351,31 +360,31 @@
     gap: 40px;
 }
 
-.conteudo-texto-1{
+.conteudo-texto-1 {
     flex: 1;
     max-width: 600px;
     color: #f5f1de;
 }
 
-.conteudo-texto-2{
+.conteudo-texto-2 {
     flex: 1;
     max-width: 600px;
     color: #000000;
 }
 
-.titulo-acessibilidade{
+.titulo-acessibilidade {
     font-size: 2.5rem;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
-.titulo-move{
+.titulo-move {
     font-size: 2.5rem;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
-.titulo-trio{
+.titulo-trio {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -395,12 +404,12 @@
     border-top: 2px solid #ffffff;
 }
 
-.conteudo-texto-1 p{
+.conteudo-texto-1 p {
     font-size: 1.1rem;
     line-height: 1.6;
 }
 
-.image-uva img{
+.image-uva img {
     max-width: 400px;
     width: 100%;
     height: auto;
@@ -409,13 +418,67 @@
     display: block;
 }
 
-.banner-bege-1{
+.banner-bege-1 {
     background-color: #F5F1DE;
     padding: 60px 20px;
     width: 100%;
     box-sizing: border-box;
 }
 
-.lista-texto{
+.lista-texto {
     text-align: center;
+}
+
+.texto-3, .imagem-garrafa-taca {
+    flex: 1;
+}
+
+.imagem-garrafa-taca img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.texo-3 h2 {
+    margin: 20px 0;
+}
+
+.texto-3 p {
+    margin-bottom: 20px;
+    line-height: 1.5; /* Espaçamento entre linhas */
+}
+
+.texto-3 hr {
+    border: none;
+    border-top: 5px solid #000000; /*cor da linha*/
+    margin: 20px 0; /*espacamento entre as linhas*/
+}
+
+.linha-curta{
+    width: 40%
+}
+.linha-media{
+    width: 70%;
+}
+.linha-grande{
+    width: 100%;
+}
+
+hr.linha-curta-baixo{
+    width: 40%;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+hr.linha-media-baixo{
+    width: 70%;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+hr.linha-grande-baixo{
+    width: 100%;
+    margin-left: auto;
+    margin-right: 0;
 }
