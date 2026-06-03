@@ -94,7 +94,8 @@
     order: -1;
 }
 
-.bloco-inicio__conteudo h2 {
+.bloco-inicio__conteudo h2,
+.bloco-inicio__conteudo .bloco-inicio__titulo {
     font-size: 32px;
     font-weight: 700;
     line-height: 1.25;
@@ -221,7 +222,8 @@
         padding: 40px 20px;
     }
 
-    .bloco-inicio__conteudo h2 {
+    .bloco-inicio__conteudo h2,
+    .bloco-inicio__conteudo .bloco-inicio__titulo {
         font-size: 26px;
     }
 }
