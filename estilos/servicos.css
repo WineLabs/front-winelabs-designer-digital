@@ -2,20 +2,14 @@
 
 .conteudo-servicos {
     min-height: auto;
-
     display: flex;
     flex-direction: column;
-
     align-items: stretch;
     justify-content: flex-start;
-
     width: 100%;
     max-width: 1200px;
-
     margin: 0 auto;
-
     padding: 40px 20px 80px;
-
     gap: 80px;
 }
 
@@ -29,9 +23,7 @@
 .banner-servicos img {
     width: 100%;
     height: 500px;
-
     object-fit: cover;
-
     border-radius: 8px;
 }
 
@@ -39,46 +31,32 @@
 
 .cards-banner {
     position: absolute;
-
     bottom: -90px;
     left: 50%;
-
     transform: translateX(-50%);
-
     width: 90%;
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
     gap: 24px;
 }
 
 .card-banner {
     background: #7B1730;
-
     color: white;
-
     padding: 50px 24px 24px;
-
     text-align: center;
-
     position: relative;
 }
 
 .circulo-card {
     width: 60px;
     height: 60px;
-
     border-radius: 50%;
-
     background: #d9d9d9;
     border: 4px solid white;
-
     position: absolute;
-
     top: -30px;
     left: 50%;
-
     transform: translateX(-50%);
 }
 
@@ -95,12 +73,9 @@
 
 .secao-destaque {
     margin-top: 100px;
-
     text-align: center;
-
     max-width: 800px;
     width: 100%;
-
     margin-left: auto;
     margin-right: auto;
 }
@@ -108,7 +83,6 @@
 .secao-destaque h1 {
     font-size: 48px;
     font-weight: 900;
-
     margin-bottom: 20px;
 }
 
@@ -121,27 +95,21 @@
 
 .secao-servicos {
     width: 100%;
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
     gap: 24px;
 }
 
 .cartao-servico {
     background: #727A55;
-
     border-radius: 12px;
-
     overflow: hidden;
-
     color: white;
 }
 
 .cartao-servico img {
     width: 100%;
     height: 220px;
-
     object-fit: cover;
 }
 
@@ -185,9 +153,7 @@
     .cards-banner {
         position: static;
         transform: none;
-
         width: 100%;
-
         margin-top: 24px;
     }
 
@@ -209,25 +175,18 @@
 }
 
 .cartao-servico {
-    background: linear-gradient(
-        180deg,
-        #727A55 0%,
-        #5F6747 100%
-    );
-
+    background: linear-gradient(180deg,
+            #727A55 0%,
+            #5F6747 100%);
     transition:
         transform 0.3s ease,
         box-shadow 0.3s ease;
 }
 
 .cartao-servico:hover {
-    background: linear-gradient(
-        180deg,
-        #7B1730 0%,
-        #5C1023 100%
-    );
-
+    background: linear-gradient(180deg,
+            #7B1730 0%,
+            #5C1023 100%);
     transform: translateY(-8px);
-
-    box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
 }
