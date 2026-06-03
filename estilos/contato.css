@@ -30,6 +30,9 @@
     border-radius: 14px;
     padding: 28px 20px 24px;
     text-align: center;
+    transition: 
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .icone-cartao-contato {
@@ -70,6 +73,18 @@
     font-size: 11px;
     line-height: 1.45;
     color: #F5F1DE;
+}
+
+.cartao-contato:hover {
+    background: linear-gradient(
+        180deg,
+        #7B1730 0%,
+        #5C1023 100%
+    );
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.18);
 }
 
 .cartao-contato p + p {
@@ -119,7 +134,7 @@
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     color: #000000;
-    background: #e0e0e0;
+    background: #E6E0C5;
 }
 
 .formulario-contato input:focus,
