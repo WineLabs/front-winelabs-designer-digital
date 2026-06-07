@@ -160,7 +160,7 @@ main {
 
 .trio-imagens img {
     width: 100%;
-    height: 255px;
+    height: auto;
     background-color: #ffffff;
     border: 5px solid #ffffff;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.14);
