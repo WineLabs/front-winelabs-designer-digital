@@ -30,7 +30,7 @@
     border-radius: 14px;
     padding: 28px 20px 24px;
     text-align: center;
-    transition: 
+    transition:
         transform 0.3s ease,
         box-shadow 0.3s ease;
 }
@@ -76,18 +76,16 @@
 }
 
 .cartao-contato:hover {
-    background: linear-gradient(
-        180deg,
-        #7B1730 0%,
-        #5C1023 100%
-    );
+    background: linear-gradient(180deg,
+            #7B1730 0%,
+            #5C1023 100%);
 
     transform: translateY(-8px);
 
-    box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
 }
 
-.cartao-contato p + p {
+.cartao-contato p+p {
     margin-top: 4px;
 }
 
@@ -177,7 +175,7 @@
     margin-bottom: 12px;
 }
 
-.painel-contato-localizacao > p {
+.painel-contato-localizacao>p {
     font-size: 13px;
     line-height: 1.5;
     margin-bottom: 6px;
