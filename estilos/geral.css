@@ -1,5 +1,3 @@
-/* Base global — variáveis, reset e layout compartilhado */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,24 +9,6 @@ body {
     color: #000000;
     line-height: 1.45;
     background-color: #F5F1DE;
-}
-
-.atalho-conteudo {
-    position: absolute;
-    top: -100%;
-    left: 16px;
-    z-index: 1000;
-    padding: 12px 20px;
-    background: #000000;
-    color: #F5F1DE;
-    font-size: 14px;
-    font-weight: 600;
-    border-radius: 4px;
-    text-decoration: none;
-}
-
-.atalho-conteudo:focus {
-    top: 16px;
 }
 
 .conteudo-principal {
