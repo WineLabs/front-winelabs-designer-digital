@@ -35,7 +35,7 @@
     transform: translateX(-50%);
     width: 90%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 24px;
 }
 
@@ -45,6 +45,8 @@
     padding: 50px 24px 24px;
     text-align: center;
     position: relative;
+    min-width: 0;
+    border-radius: 8px;
 }
 
 .circulo-card {
@@ -71,7 +73,8 @@
 
 .card-banner h2 {
     margin-bottom: 12px;
-    font-size: 28px;
+    font-size: clamp(22px, 2.4vw, 28px);
+    overflow-wrap: anywhere;
 }
 
 .card-banner p {
@@ -88,20 +91,20 @@
 }
 
 .secao-destaque h1 {
-    font-size: 48px;
+    font-size: clamp(32px, 5vw, 48px);
     font-weight: 900;
     margin-bottom: 20px;
 }
 
 .secao-destaque p {
-    font-size: 20px;
+    font-size: clamp(18px, 2.2vw, 20px);
     color: rgba(0, 0, 0, 0.7);
 }
 
 .secao-servicos {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
     gap: 24px;
 }
 
@@ -114,8 +117,9 @@
 
 .cartao-servico img {
     width: 100%;
-    height: 220px;
+    height: clamp(180px, 24vw, 220px);
     object-fit: cover;
+    display: block;
 }
 
 .cartao-servico-conteudo {
@@ -125,7 +129,7 @@
 
 .cartao-servico h2 {
     margin-bottom: 12px;
-    font-size: 24px;
+    font-size: clamp(21px, 2.4vw, 24px);
 }
 
 .cartao-servico p {
@@ -133,46 +137,37 @@
 }
 
 @media (max-width: 900px) {
-
-    .cards-banner,
-    .secao-servicos {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .banner-servicos img {
-        height: 380px;
-    }
-}
-
-@media (max-width: 640px) {
-
-    .cards-banner,
-    .secao-servicos {
-        grid-template-columns: 1fr;
-    }
-
     .cards-banner {
         position: static;
         transform: none;
         width: 100%;
         margin-top: 24px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .secao-destaque {
         margin-top: 0;
     }
+}
 
-    .secao-destaque h1 {
-        font-size: 32px;
+@media (max-width: 640px) {
+    .cards-banner {
+        grid-template-columns: 1fr;
     }
 
-    .secao-destaque p {
-        font-size: 18px;
+    .card-banner {
+        padding-left: 18px;
+        padding-right: 18px;
     }
 
-    .banner-servicos img {
-        height: 280px;
+    .cartao-servico-conteudo {
+        padding: 20px;
     }
+
+    .secao-servicos {
+        gap: 20px;
+    }
+
 }
 
 .cartao-servico {
@@ -190,4 +185,10 @@
             #5C1023 100%);
     transform: translateY(-8px);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+@media (max-width: 640px) {
+    .cartao-servico:hover {
+        transform: none;
+    }
 }
