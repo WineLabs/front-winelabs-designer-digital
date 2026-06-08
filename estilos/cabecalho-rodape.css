@@ -1,6 +1,3 @@
-/* Cabeçalho e rodapé — layout global do site */
-
-/* Cabeçalho */
 .cabecalho {
     display: flex;
     gap: 34px;
@@ -47,8 +44,7 @@
     line-height: 1.45;
 }
 
-.lista-menu a:hover,
-.lista-menu a:focus-visible {
+.lista-menu a:hover {
     color: #5c1a1a;
 }
 
@@ -57,7 +53,6 @@
     color: #5c1a1a;
 }
 
-/* Rodapé */
 .rodape {
     display: flex;
     flex-direction: column;
@@ -183,8 +178,7 @@
     line-height: 1.45;
 }
 
-.rodape-lista-coluna a:hover,
-.rodape-lista-coluna a:focus-visible {
+.rodape-lista-coluna a:hover {
     color: #5c1a1a;
 }
 
