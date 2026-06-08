@@ -1,6 +1,4 @@
-/* Página de contato */
-
-.conteudo-principal--contato {
+.pagina-contato {
     flex-direction: column;
     align-items: stretch;
     gap: 40px;
@@ -64,8 +62,7 @@
     text-decoration: none;
 }
 
-.titulo-cartao-contato a:hover,
-.titulo-cartao-contato a:focus-visible {
+.titulo-cartao-contato a:hover {
     text-decoration: underline;
 }
 
