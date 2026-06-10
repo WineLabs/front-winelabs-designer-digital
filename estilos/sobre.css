@@ -97,11 +97,13 @@ main {
     object-fit: cover;
 }
 
-.image-douglas,
+.image-douglas{
+    border: 5px solid #ffffff;
+}
 .image-vinhedo,
 .imagem-garrafa-taca {
     background: #ffffff;
-    border: 5px solid #ffffff;
+    border: 5px solid #871932;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.14);
     overflow: hidden;
 }
