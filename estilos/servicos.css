@@ -33,9 +33,12 @@
     bottom: -90px;
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
+
+    width: calc(100% - 40px);
+    max-width: 1200px;
+
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
 
