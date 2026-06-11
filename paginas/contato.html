@@ -4,41 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
     <title>Contato — Winelabs</title>
-    <link rel="icon" href="../recursos/icones/favicon-winelabs.svg" type="image/svg+xml">
-    
+    <link rel="icon" href="../recursos/icones/favicon-winelabs.svg">
     <link rel="stylesheet" href="../estilos/geral.css">
     <link rel="stylesheet" href="../estilos/cabecalho-rodape.css">
     <link rel="stylesheet" href="../estilos/contato.css">
 </head>
 
 <body>
-    <a href="#main" class="atalho-conteudo">Ir para o conteúdo</a>
-
     <header class="cabecalho">
         <h1 class="cabecalho-logo">
-            <a href="../index.html" aria-label="Winelabs — página inicial">Winelabs</a>
+            <a href="../index.html">Winelabs</a>
         </h1>
-        <nav class="cabecalho-menu" aria-label="Menu principal">
+        <nav class="cabecalho-menu">
             <ul class="lista-menu">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
                 <li><a href="contato.html" aria-current="page">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <main id="main" class="conteudo-principal conteudo-principal--contato">
+    <main class="conteudo-principal pagina-contato">
         <h1 class="titulo-pagina-contato">Nosso Contato</h1>
 
-        <section class="cartoes-contato" aria-label="Informações de contato">
+        <div class="cartoes-contato">
             <article class="cartao-contato">
                 <div class="icone-cartao-contato">
-                    <img src="../recursos/imagens/contato-telefone.jpeg" alt="" width="72" height="72">
+                    <img src="../recursos/imagens/contato-telefone.jpeg" alt="">
                 </div>
                 <h2 class="titulo-cartao-contato"><a href="tel:+551140028922">(11) 4002-8922</a></h2>
                 <p>Atendimento: seg–sex, 09:00–18:00.</p>
@@ -46,7 +40,7 @@
             </article>
             <article class="cartao-contato">
                 <div class="icone-cartao-contato">
-                    <img src="../recursos/imagens/contato-email.jpeg" alt="" width="72" height="72">
+                    <img src="../recursos/imagens/contato-email.jpeg" alt="">
                 </div>
                 <h2 class="titulo-cartao-contato"><a href="mailto:douglas@gmail.com">douglas@gmail.com</a></h2>
                 <p>Envie briefings, referências e arquivos para análise.</p>
@@ -54,7 +48,7 @@
             </article>
             <article class="cartao-contato">
                 <div class="icone-cartao-contato">
-                    <img src="../recursos/imagens/contato-localizacao.jpeg" alt="" width="72" height="72">
+                    <img src="../recursos/imagens/contato-localizacao.jpeg" alt="">
                 </div>
                 <h2 class="titulo-cartao-contato"><a href="#localizacao">Localização</a></h2>
                 <p>Atendemos por agendamento em São Roque — SP e remoto para todo o país.</p>
@@ -62,16 +56,15 @@
             </article>
             <article class="cartao-contato">
                 <div class="icone-cartao-contato">
-                    <img src="../recursos/imagens/contato-instagram.jpeg" alt="" width="72" height="72">
+                    <img src="../recursos/imagens/contato-instagram.jpeg" alt="">
                 </div>
-                <h2 class="titulo-cartao-contato"><a href="https://www.instagram.com/" target="_blank"
-                    rel="noopener noreferrer">@douglas_enolo</a></h2>
+                <h2 class="titulo-cartao-contato"><a href="https://www.instagram.com/" target="_blank">@douglas_enolo</a></h2>
                 <p>Siga nossos rótulos, processos criativos e novidades de lançamento.</p>
                 <p>Posts semanais com estudos de caso e bastidores.</p>
             </article>
-        </section>
+        </div>
 
-        <section class="painel-contato" aria-label="Formulário e localização">
+        <section class="painel-contato">
             <div class="painel-contato-formulario">
                 <form id="formulario-contato" class="formulario-contato" data-email="douglas@gmail.com">
                     <div class="campo-formulario-contato">
@@ -117,14 +110,13 @@
                 <p class="rodape-frase">Acessibilidade e inovação ao mundo do vinho.</p>
             </div>
             <div class="rodape-menu">
-                <nav class="rodape-coluna coluna-navegacao" aria-label="Links do site">
+                <nav class="rodape-coluna coluna-navegacao">
                     <div class="rodape-titulo-coluna">Links</div>
                     <ul class="rodape-lista-coluna">
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="sobre.html">Sobre</a></li>
-                        <li><a href="servicos.html">Serviços</a></li>
-                        <li><a href="projetos.html">Projetos</a></li>
-                        <li><a href="contato.html" aria-current="page">Contato</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
                     </ul>
                 </nav>
                 <div class="rodape-coluna coluna-contato">
@@ -138,23 +130,22 @@
                 <div class="rodape-coluna coluna-redes">
                     <div class="rodape-titulo-coluna">Redes Sociais</div>
                     <div class="redes-sociais">
-                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
-                            class="rede-social" aria-label="Instagram">
-                            <img src="../recursos/icones/instagram.png" alt="" width="32" height="32">
+                        <a href="https://www.instagram.com/" target="_blank"
+                            class="rede-social">
+                            <img src="../recursos/icones/instagram.png" alt="">
                         </a>
-                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
-                            class="rede-social" aria-label="Facebook">
-                            <img src="../recursos/icones/facebook.png" alt="" width="32" height="32">
+                        <a href="https://www.facebook.com/" target="_blank"
+                            class="rede-social">
+                            <img src="../recursos/icones/facebook.png" alt="">
                         </a>
-                        <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer"
-                            class="rede-social" aria-label="WhatsApp">
-                            <img src="../recursos/icones/whatsapp.png" alt="" width="32" height="32">
+                        <a href="https://wa.me/5511999999999" target="_blank"
+                            class="rede-social">
+                            <img src="../recursos/icones/whatsapp.png" alt="">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-        <p class="rodape-credito">&copy; 2026 Leonardo Gabriel</p>
     </footer>
 
     

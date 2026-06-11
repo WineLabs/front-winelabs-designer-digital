@@ -1,5 +1,3 @@
-/* Layout da página */
-
 .conteudo-servicos {
     min-height: auto;
     display: flex;
@@ -9,32 +7,36 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px 20px 80px;
+    padding: 0 20px 80px; /* remove o espaço superior */
+
     gap: 80px;
 }
 
-/* Banner */
-
 .banner-servicos {
     position: relative;
-    width: 100%;
+
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
 }
 
 .banner-servicos img {
+    display: block;
     width: 100%;
-    height: 500px;
+    height: auto;
+    aspect-ratio: 21 / 9;
     object-fit: cover;
-    border-radius: 8px;
+    object-position: center 58%;
 }
-
-/* Cards sobre a imagem */
 
 .cards-banner {
     position: absolute;
     bottom: -90px;
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
+
+    width: calc(100% - 40px);
+    max-width: 1200px;
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
@@ -46,6 +48,8 @@
     padding: 50px 24px 24px;
     text-align: center;
     position: relative;
+    min-width: 0;
+    border-radius: 8px;
 }
 
 .circulo-card {
@@ -53,23 +57,32 @@
     height: 60px;
     border-radius: 50%;
     background: #d9d9d9;
-    border: 4px solid white;
+    border: 4px solid #697350;
+
     position: absolute;
     top: -30px;
     left: 50%;
     transform: translateX(-50%);
+
+    overflow: hidden;
+}
+
+.circulo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .card-banner h2 {
     margin-bottom: 12px;
-    font-size: 28px;
+    font-size: clamp(22px, 2.4vw, 28px);
+    overflow-wrap: anywhere;
 }
 
 .card-banner p {
     line-height: 1.6;
 }
-
-/* Título */
 
 .secao-destaque {
     margin-top: 100px;
@@ -81,22 +94,20 @@
 }
 
 .secao-destaque h1 {
-    font-size: 48px;
+    font-size: clamp(32px, 5vw, 48px);
     font-weight: 900;
     margin-bottom: 20px;
 }
 
 .secao-destaque p {
-    font-size: 20px;
+    font-size: clamp(18px, 2.2vw, 20px);
     color: rgba(0, 0, 0, 0.7);
 }
-
-/* Grid de serviços */
 
 .secao-servicos {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
     gap: 24px;
 }
 
@@ -109,8 +120,9 @@
 
 .cartao-servico img {
     width: 100%;
-    height: 220px;
+    height: clamp(180px, 24vw, 220px);
     object-fit: cover;
+    display: block;
 }
 
 .cartao-servico-conteudo {
@@ -120,58 +132,45 @@
 
 .cartao-servico h2 {
     margin-bottom: 12px;
-    font-size: 24px;
+    font-size: clamp(21px, 2.4vw, 24px);
 }
 
 .cartao-servico p {
     line-height: 1.6;
 }
 
-/* Tablet */
-
 @media (max-width: 900px) {
-
-    .cards-banner,
-    .secao-servicos {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .banner-servicos img {
-        height: 380px;
-    }
-}
-
-/* Mobile */
-
-@media (max-width: 640px) {
-
-    .cards-banner,
-    .secao-servicos {
-        grid-template-columns: 1fr;
-    }
-
     .cards-banner {
         position: static;
         transform: none;
         width: 100%;
         margin-top: 24px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .secao-destaque {
         margin-top: 0;
     }
+}
 
-    .secao-destaque h1 {
-        font-size: 32px;
+@media (max-width: 640px) {
+    .cards-banner {
+        grid-template-columns: 1fr;
     }
 
-    .secao-destaque p {
-        font-size: 18px;
+    .card-banner {
+        padding-left: 18px;
+        padding-right: 18px;
     }
 
-    .banner-servicos img {
-        height: 280px;
+    .cartao-servico-conteudo {
+        padding: 20px;
     }
+
+    .secao-servicos {
+        gap: 20px;
+    }
+
 }
 
 .cartao-servico {
@@ -189,4 +188,281 @@
             #5C1023 100%);
     transform: translateY(-8px);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+@media (max-width: 640px) {
+    .cartao-servico:hover {
+        transform: none;
+    }
+}
+
+/*==============================
+    ESTATÍSTICAS
+==============================*/
+
+.secao-estatisticas{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:#FFFFFF;
+
+    border-radius:14px;
+
+    margin:50px 0;
+
+    padding:35px 20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.estatistica{
+
+    flex:1;
+
+    text-align:center;
+
+    position:relative;
+
+    transition:all .35s ease;
+}
+
+.estatistica:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.estatistica:not(:last-child)::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:15%;
+
+    right:0;
+
+    width:1px;
+
+    height:70%;
+
+    background:#d9d9d9;
+
+}
+
+.estatistica h2{
+
+    font-size:52px;
+
+    color:#7B1730;
+
+    margin-bottom:10px;
+
+    font-weight:800;
+
+    transition:all .35s ease;
+
+}
+
+.estatistica:hover h2{
+
+    transform:scale(1.12);
+
+    color:#697350;
+
+}
+
+.estatistica span{
+
+    color:#697350;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    line-height:1.6;
+
+    transition:.35s;
+
+}
+
+.estatistica:hover span{
+
+    color:#7B1730;
+
+}
+
+@media(max-width:900px){
+
+    .secao-estatisticas{
+
+        flex-direction:column;
+
+        gap:30px;
+
+    }
+
+    .estatistica:not(:last-child)::after{
+
+        display:none;
+
+    }
+
+}
+
+/*==============================
+        CTA FINAL
+==============================*/
+
+.cta-servicos{
+
+    width:100%;
+
+    background:linear-gradient(135deg,#7B1730,#5C1023);
+
+    border-radius:16px;
+
+    padding:70px 40px;
+
+    margin-top:70px;
+
+    text-align:center;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.cta-servicos::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:250px;
+    height:250px;
+
+    background:rgba(255,255,255,.05);
+
+    border-radius:50%;
+
+    top:-100px;
+    left:-80px;
+
+}
+
+.cta-servicos::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+    height:180px;
+
+    background:rgba(255,255,255,.04);
+
+    border-radius:50%;
+
+    bottom:-70px;
+    right:-40px;
+
+}
+
+.cta-conteudo{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:700px;
+
+    margin:0 auto;
+
+}
+
+.cta-conteudo h2{
+
+    color:#F5F1DE;
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+    font-weight:700;
+
+}
+
+.cta-conteudo p{
+
+    color:rgba(245,241,222,.9);
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+.botao-cta{
+
+    display:inline-block;
+
+    background:#697350;
+
+    color:#F5F1DE;
+
+    padding:15px 35px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.botao-cta:hover{
+
+    background:#F5F1DE;
+
+    color:#7B1730;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
+@media(max-width:768px){
+
+    .cta-servicos{
+
+        padding:50px 25px;
+
+    }
+
+    .cta-conteudo h2{
+
+        font-size:30px;
+
+    }
+
+    .cta-conteudo p{
+
+        font-size:16px;
+
+    }
+
 }

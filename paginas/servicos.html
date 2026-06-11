@@ -4,46 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
+
+
     <title>Serviços — Winelabs</title>
-    <link rel="icon" href="../recursos/icones/favicon-winelabs.svg" type="image/svg+xml">
-    
+    <link rel="icon" href="../recursos/icones/favicon-winelabs.svg">
+
     <link rel="stylesheet" href="../estilos/geral.css">
     <link rel="stylesheet" href="../estilos/cabecalho-rodape.css">
     <link rel="stylesheet" href="../estilos/servicos.css">
 </head>
 
 <body>
-    <a href="#main" class="atalho-conteudo">Ir para o conteúdo</a>
-
     <header class="cabecalho">
-        <h1 class="cabecalho-logo">
-            <a href="../index.html" aria-label="Winelabs — página inicial">Winelabs</a>
-        </h1>
-        <nav class="cabecalho-menu" aria-label="Menu principal">
+        <div class="cabecalho-logo">
+            <a href="../index.html">Winelabs</a>
+        </div>
+        <nav class="cabecalho-menu">
             <ul class="lista-menu">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="servicos.html" aria-current="page">Serviços</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <main id="main" class="conteudo-principal conteudo-servicos">
+    <main class="conteudo-principal conteudo-servicos">
 
         <!-- Banner -->
-        <section class="banner-servicos">
+        <div class="banner-servicos">
 
-            <img src="../recursos/imagens/banner-servicos.webp" alt="Pessoas degustando vinho">
+            <img src="../recursos/imagens/banner-servicos.png" alt="Pessoas degustando vinho">
 
             <div class="cards-banner">
 
                 <article class="card-banner">
-                    <div class="circulo-card"></div>
-
+                    <div class="circulo-card">
+                        <img src="../recursos/imagens/servico-consultoria.png" alt="Consultoria">
+                    </div>
                     <h2>Consultoria</h2>
 
                     <p>
@@ -53,7 +51,9 @@
                 </article>
 
                 <article class="card-banner">
-                    <div class="circulo-card"></div>
+                    <div class="circulo-card">
+                        <img src="../recursos/imagens/servico-design.png" alt="Design">
+                    </div>
 
                     <h2>Design</h2>
 
@@ -64,7 +64,9 @@
                 </article>
 
                 <article class="card-banner">
-                    <div class="circulo-card"></div>
+                    <div class="circulo-card">
+                        <img src="../recursos/imagens/servico-enogastronomia.png" alt="Enogastronomia">
+                    </div>
 
                     <h2>Enogastronomia</h2>
 
@@ -75,7 +77,9 @@
 
             </div>
 
-        </section>
+        </div>
+
+
 
         <!-- Introdução -->
         <section class="secao-destaque">
@@ -83,70 +87,122 @@
             <h1>Nossos Serviços</h1>
 
             <p>
-                Atuamos em diferentes áreas do setor vitivinícola oferecendo
-                soluções personalizadas para empresas e consumidores.
+                A diversidade do universo do vinho inspira cada projeto desenvolvido pela Winelabs. Trabalhamos com
+                diferentes estilos de vinificação para criar rótulos que expressem qualidade, personalidade e
+                equilíbrio, sempre valorizando as características únicas de cada categoria. Nossa atuação une tradição,
+                tecnologia e criatividade para oferecer soluções que elevam a experiência de produtores e consumidores.
             </p>
 
         </section>
 
+<section class="secao-estatisticas">
+
+    <div class="estatistica">
+        <h2>+50</h2>
+        <p>Projetos Desenvolvidos</p>
+    </div>
+
+    <div class="estatistica">
+        <h2>+30</h2>
+        <p>Clientes Atendidos</p>
+    </div>
+
+    <div class="estatistica">
+        <h2>100%</h2>
+        <p>Atendimento Personalizado</p>
+    </div>
+
+    <div class="estatistica">
+        <h2>+10</h2>
+        <p>Anos de Experiência</p>
+    </div>
+
+</section>
+
         <!-- Serviços -->
-        <section class="secao-servicos">
+        <div class="secao-servicos">
 
             <article class="cartao-servico">
-                <img src="../recursos/imagens/treinamentos-serviços.webp" alt="Consultoria empresarial">
+                <img src="../recursos/imagens/vinho-tinto-servico.jpg" alt="Consultoria empresarial">
 
                 <div class="cartao-servico-conteudo">
-                    <h2>Consultoria Empresarial</h2>
-                    <p>Planejamento estratégico e desenvolvimento empresarial.</p>
+                    <h2>Vinho Tinto</h2>
+                    <p>Planejamento e desenvolvimento de rótulos tintos premium, desde a seleção das uvas até a
+                        definição do perfil sensorial.</p>
                 </div>
             </article>
 
             <article class="cartao-servico">
-                <img src="../recursos/imagens/treinamentos-serviços.webp" alt="Design de produtos">
+                <img src="../recursos/imagens/vinho-branco-servico.jpg" alt="Design de produtos">
 
                 <div class="cartao-servico-conteudo">
-                    <h2>Design de Produtos</h2>
-                    <p>Projetos acessíveis e soluções inovadoras.</p>
+                    <h2>Vinho Branco</h2>
+                    <p>Projetos de vinificação voltados à produção de vinhos brancos elegantes, frescos e alinhados às
+                        tendências do mercado.</p>
                 </div>
             </article>
 
             <article class="cartao-servico">
-                <img src="../recursos/imagens/treinamentos-serviços.webp" alt="Degustações guiadas">
+                <img src="../recursos/imagens/vinho-rose-servico.jpg" alt="Degustações guiadas">
 
                 <div class="cartao-servico-conteudo">
-                    <h2>Degustações Guiadas</h2>
-                    <p>Experiências conduzidas por especialistas.</p>
+                    <h2>Vinho Rosé</h2>
+                    <p>Desenvolvimento de rosés com identidade visual e sensorial diferenciada para consumidores que
+                        buscam leveza e sofisticação.</p>
                 </div>
             </article>
 
             <article class="cartao-servico">
-                <img src="../recursos/imagens/treinamentos-serviços.webp" alt="Treinamentos">
+                <img src="../recursos/imagens/vinho-espumante-servico.jpg" alt="Treinamentos">
 
                 <div class="cartao-servico-conteudo">
-                    <h2>Treinamentos</h2>
-                    <p>Capacitação de equipes e profissionais.</p>
+                    <h2>Espumante</h2>
+                    <p>Consultoria especializada para criação de espumantes destinados a celebrações, eventos e linhas
+                        premium.</p>
                 </div>
             </article>
 
             <article class="cartao-servico">
-                <img src="../recursos/imagens/treinamentos-serviços.webp" alt="Eventos">
+                <img src="../recursos/imagens/vinho-licoroso-servico.jpg" alt="Eventos">
 
                 <div class="cartao-servico-conteudo">
-                    <h2>Eventos</h2>
-                    <p>Organização de experiências exclusivas.</p>
+                    <h2>Vinho Licoroso</h2>
+                    <p>Projetos exclusivos para produção de vinhos licorosos com foco em qualidade, tradição e valor
+                        agregado.</p>
                 </div>
             </article>
 
             <article class="cartao-servico">
-                <img src="../recursos/imagens/treinamentos-serviços.webp" alt="Harmonizações">
+                <img src="../recursos/imagens/vinho-sobremesa-servico.jpg" alt="Harmonizações">
 
                 <div class="cartao-servico-conteudo">
-                    <h2>Harmonizações</h2>
-                    <p>Combinações entre vinhos e gastronomia.</p>
+                    <h2>Vinho de Sobremesa</h2>
+                    <p>Desenvolvimento de vinhos de sobremesa para harmonizações especiais e experiências gastronômicas
+                        diferenciadas.</p>
                 </div>
             </article>
 
-        </section>
+        </div>
+
+        <section class="cta-servicos">
+
+    <div class="cta-conteudo">
+
+        <h2>Transforme sua ideia em uma experiência única</h2>
+
+        <p>
+            A Winelabs está preparada para desenvolver soluções personalizadas,
+            criar novos produtos e fortalecer marcas do universo vitivinícola.
+            Entre em contato e descubra como podemos ajudar o seu projeto.
+        </p>
+
+        <a href="contato.html" class="botao-cta">
+            Solicitar Consultoria
+        </a>
+
+    </div>
+
+</section>
 
     </main>
 
@@ -157,13 +213,12 @@
                 <p class="rodape-frase">Acessibilidade e inovação ao mundo do vinho.</p>
             </div>
             <div class="rodape-menu">
-                <nav class="rodape-coluna coluna-navegacao" aria-label="Links do site">
+                <nav class="rodape-coluna coluna-navegacao">
                     <div class="rodape-titulo-coluna">Links</div>
                     <ul class="rodape-lista-coluna">
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="sobre.html">Sobre</a></li>
-                        <li><a href="servicos.html" aria-current="page">Serviços</a></li>
-                        <li><a href="projetos.html">Projetos</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
                         <li><a href="contato.html">Contato</a></li>
                     </ul>
                 </nav>
@@ -178,23 +233,19 @@
                 <div class="rodape-coluna coluna-redes">
                     <div class="rodape-titulo-coluna">Redes Sociais</div>
                     <div class="redes-sociais">
-                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
-                            class="rede-social" aria-label="Instagram">
+                        <a href="https://www.instagram.com/" target="_blank" class="rede-social">
                             <img src="../recursos/icones/instagram.png" alt="" width="32" height="32">
                         </a>
-                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
-                            class="rede-social" aria-label="Facebook">
+                        <a href="https://www.facebook.com/" target="_blank" class="rede-social">
                             <img src="../recursos/icones/facebook.png" alt="" width="32" height="32">
                         </a>
-                        <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer"
-                            class="rede-social" aria-label="WhatsApp">
+                        <a href="https://wa.me/5511999999999" target="_blank" class="rede-social">
                             <img src="../recursos/icones/whatsapp.png" alt="" width="32" height="32">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-        <p class="rodape-credito">&copy; 2026 Cristian Rosa</p>
     </footer>
 </body>
 

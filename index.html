@@ -4,49 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Winelabs</title>
-    <link rel="icon" href="recursos/icones/favicon-winelabs.svg" type="image/svg+xml">
+    <link rel="icon" href="recursos/icones/favicon-winelabs.svg">
     <link rel="stylesheet" href="estilos/geral.css">
     <link rel="stylesheet" href="estilos/cabecalho-rodape.css">
     <link rel="stylesheet" href="estilos/inicio.css">
 </head>
 
 <body>
-    <a href="#main" class="atalho-conteudo">Ir para o conteúdo</a>
-
     <header class="cabecalho">
         <h1 class="cabecalho-logo">
-            <a href="index.html" aria-label="Winelabs — página inicial">Winelabs</a>
+            <a href="index.html">Winelabs</a>
         </h1>
-        <nav class="cabecalho-menu" aria-label="Menu principal">
+        <nav class="cabecalho-menu">
             <ul class="lista-menu">
                 <li><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="paginas/sobre.html">Sobre</a></li>
                 <li><a href="paginas/servicos.html">Serviços</a></li>
-                <li><a href="paginas/projetos.html">Projetos</a></li>
                 <li><a href="paginas/contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <main id="main" class="conteudo-principal conteudo-principal--inicio">
+    <main class="conteudo-principal pagina-inicial">
         <figure class="imagem-destaque">
             <img src="recursos/imagens/destaque-vinhedo-winelabs.png"
-                alt="Vinhedo ao pôr do sol com taça de vinho, uvas e marca Winelabs" width="1536" height="1024"
-                draggable="false">
+                alt="Vinhedo ao pôr do sol com taça de vinho, uvas e marca Winelabs">
         </figure>
 
-        <section class="bloco-inicio bloco-inicio--vinho" aria-labelledby="titulo-bloco-inicio-1">
-            <div class="bloco-inicio__interno">
-                <div class="bloco-inicio__midia--sobreposta">
-                    <img class="pilha-inicio__fundo" src="recursos/imagens/vinhedo-por-do-sol.png"
-                        alt="Paisagem de vinhedos" width="320" height="420">
-                    <img class="pilha-inicio__frente" src="recursos/imagens/vinho-tinto-servido-na-taca.png"
-                        alt="Vinho tinto sendo servido em uma taça" width="220" height="220">
+        <section class="bloco-inicio bloco-vinho">
+            <div class="bloco-interno">
+                <div class="imagens-sobrepostas">
+
+                    <img class="imagem-fundo" src="recursos/imagens/vinhedo-por-do-sol.png" alt="Paisagem de vinhedos">
+                    <img class="imagem-frente" src="recursos/imagens/vinho-tinto-servido-na-taca.png"
+                        alt="Vinho tinto sendo servido em uma taça">
                 </div>
-                <div class="bloco-inicio__conteudo">
-                    <h2 id="titulo-bloco-inicio-1" class="bloco-inicio__titulo">Consultoria empresarial</h2>
+                <div class="texto-inicio">
+                    <h2 class="titulo-inicio">Consultoria empresarial</h2>
                     <p>Diagnóstico, estratégia e acompanhamento para marcas e negócios do setor vitivinícola evoluírem
                         com
                         método, dados e identidade clara — do planejamento à execução.</p>
@@ -55,29 +50,29 @@
             </div>
         </section>
 
-        <section class="bloco-inicio bloco-inicio--claro" aria-labelledby="titulo-bloco-inicio-2">
-            <div class="bloco-inicio__interno bloco-inicio__interno--invertido">
-                <div class="bloco-inicio__conteudo">
-                    <h2 id="titulo-bloco-inicio-2" class="bloco-inicio__titulo">Design de produtos</h2>
+        <section class="bloco-inicio bloco-claro">
+            <div class="bloco-interno bloco-invertido">
+                <div class="texto-inicio">
+                    <h2 class="titulo-inicio">Design de produtos</h2>
                     <p>Criação e repaginação de rótulos, embalagens e linhas de produtos com foco em acessibilidade,
                         inovação e posicionamento de mercado para o universo do vinho.</p>
-                    <a href="paginas/projetos.html" class="botao-inicio">Ver projetos</a>
+                    <a href="paginas/servicos.html" class="botao-inicio">Saiba mais</a>
                 </div>
-                <figure class="bloco-inicio__midia--unica">
+                <figure class="imagem-unica">
                     <img src="recursos/imagens/garrafa-cabernet-taca-uvas.png"
-                        alt="Garrafa de Cabernet Sauvignon com taça e uvas" width="520" height="400">
+                        alt="Garrafa de Cabernet Sauvignon com taça e uvas">
                 </figure>
             </div>
         </section>
 
-        <section class="bloco-inicio bloco-inicio--vinho" aria-labelledby="titulo-bloco-inicio-3">
-            <div class="bloco-inicio__interno">
-                <figure class="bloco-inicio__midia--cartao">
+        <section class="bloco-inicio bloco-vinho">
+            <div class="bloco-interno">
+                <figure class="imagem-cartao">
                     <img src="recursos/imagens/taca-vinho-vinhedo-harmonizacao.png"
-                        alt="Taça de vinho com uvas e queijo diante de um vinhedo" width="520" height="400">
+                        alt="Taça de vinho com uvas e queijo diante de um vinhedo">
                 </figure>
-                <div class="bloco-inicio__conteudo">
-                    <h2 id="titulo-bloco-inicio-3" class="bloco-inicio__titulo">Consultoria enogastronômica</h2>
+                <div class="texto-inicio">
+                    <h2 class="titulo-inicio">Consultoria enogastronômica</h2>
                     <p>Degustações guiadas, harmonizações e experiências para eventos, vinícolas e restaurantes —
                         traduzindo
                         o vinho para diferentes públicos sem perder qualidade.</p>
@@ -86,22 +81,211 @@
             </div>
         </section>
 
-        <section class="bloco-inicio bloco-inicio--claro" aria-labelledby="titulo-bloco-inicio-4">
-            <div class="bloco-inicio__interno bloco-inicio__interno--invertido">
-                <div class="bloco-inicio__conteudo">
-                    <h2 id="titulo-bloco-inicio-4" class="bloco-inicio__titulo">Identidade de marca</h2>
+        <section class="bloco-inicio bloco-claro">
+            <div class="bloco-interno bloco-invertido">
+                <div class="texto-inicio">
+                    <h2 class="titulo-inicio">Identidade de marca</h2>
                     <p>Construção de marcas, narrativas e materiais visuais para vinícolas e projetos do vinho
                         comunicarem
                         sua essência com consistência, elegância e clareza.</p>
-                    <a href="paginas/projetos.html" class="botao-inicio">Ver projetos</a>
+                    <a href="paginas/servicos.html" class="botao-inicio">Saiba mais</a>
                 </div>
-                <figure class="bloco-inicio__midia--unica">
-                    <img src="recursos/imagens/vinhedo-por-do-sol.png" alt="Vinhedo ao pôr do sol" width="520"
-                        height="400">
+                <figure class="imagem-unica">
+                    <img src="recursos/imagens/vinhedo-por-do-sol.png" alt="Vinhedo ao pôr do sol">
                 </figure>
             </div>
         </section>
     </main>
+
+    <section class="depoimentos-home">
+        <div class="depoimentos-container">
+
+            <div class="depoimentos-titulo">
+                <h2>O que nossos clientes dizem</h2>
+                <p>
+                    Histórias de sucesso construídas através da paixão pelo vinho,
+                    inovação e compromisso com a excelência.
+                </p>
+            </div>
+
+            <div class="depoimentos-grid">
+
+                <article class="card-depoimento">
+
+                    <div class="aspas">❝</div>
+
+                    <div class="estrelas">★★★★★</div>
+
+                    <p>
+                        A Winelabs trouxe uma nova identidade para nossa vinícola,
+                        valorizando nossa marca e aproximando nossos produtos do público.
+                    </p>
+
+                    <div class="cliente">
+                        <h3>Marcos Oliveira</h3>
+                        <span>Vinícola Vale Verde</span>
+                    </div>
+
+                </article>
+
+                <article class="card-depoimento">
+
+                    <div class="aspas">❝</div>
+
+                    <div class="estrelas">★★★★★</div>
+
+                    <p>
+                        O trabalho de consultoria superou nossas expectativas,
+                        criando experiências únicas através das harmonizações propostas.
+                    </p>
+
+                    <div class="cliente">
+                        <h3>Fernanda Costa</h3>
+                        <span>Restaurante Monte Bianco</span>
+                    </div>
+
+                </article>
+
+                <article class="card-depoimento">
+
+                    <div class="aspas">❝</div>
+
+                    <div class="estrelas">★★★★★</div>
+
+                    <p>
+                        O desenvolvimento dos rótulos e da identidade visual fortaleceu
+                        nossa marca e deu uma nova personalidade aos nossos vinhos.
+                    </p>
+
+                    <div class="cliente">
+                        <h3>Ricardo Almeida</h3>
+                        <span>Adega Monte Bello</span>
+                    </div>
+
+                </article>
+
+
+                <article class="card-depoimento">
+
+                    <div class="aspas">❝</div>
+
+                    <div class="estrelas">★★★★★</div>
+
+                    <p>
+                        A equipe da Winelabs nos auxiliou na criação de uma identidade visual
+                        elegante e alinhada ao perfil dos nossos vinhos. O resultado superou
+                        nossas expectativas.
+                    </p>
+
+                    <div class="cliente">
+                        <h3>Juliana Martins</h3>
+                        <span>Vinícola Colina Dourada</span>
+                    </div>
+
+                </article>
+
+                <article class="card-depoimento">
+
+                    <div class="aspas">❝</div>
+
+                    <div class="estrelas">★★★★★</div>
+
+                    <p>
+                        O suporte técnico e estratégico foi essencial para aprimorar nossos
+                        processos e fortalecer nossa presença no mercado regional de vinhos.
+                    </p>
+
+                    <div class="cliente">
+                        <h3>Eduardo Lima</h3>
+                        <span>Adega Bosque dos Vinhos</span>
+                    </div>
+
+                </article>
+
+                <article class="card-depoimento">
+
+                    <div class="aspas">❝</div>
+
+                    <div class="estrelas">★★★★★</div>
+
+                    <p>
+                        As consultorias e experiências de harmonização proporcionaram um novo
+                        olhar sobre nossos produtos, encantando clientes e parceiros em cada
+                        evento realizado.
+                    </p>
+
+                    <div class="cliente">
+                        <h3>Patrícia Souza</h3>
+                        <span>Espaço Enogastronômico Villa Vitis</span>
+                    </div>
+
+                </article>
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="faq-home">
+        <div class="faq-container">
+
+            <div class="faq-titulo">
+                <h2>Perguntas Frequentes</h2>
+                <p>
+                    Tire suas dúvidas sobre nossos serviços de consultoria,
+                    desenvolvimento de produtos e experiências enológicas.
+                </p>
+            </div>
+
+            <div class="faq-lista">
+
+                <details>
+                    <summary>Quais serviços a Winelabs oferece?</summary>
+                    <p>
+                        Atuamos com consultoria empresarial, design de produtos,
+                        identidade de marca e consultoria enogastronômica para o
+                        setor vitivinícola.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Vocês desenvolvem rótulos personalizados?</summary>
+                    <p>
+                        Sim. Criamos projetos exclusivos para vinhos, incluindo
+                        identidade visual, embalagens e posicionamento da marca.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>É possível contratar consultoria para uma vinícola?</summary>
+                    <p>
+                        Sim. A consultoria é personalizada e atende desde pequenos
+                        produtores até empresas consolidadas do setor.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Vocês realizam degustações e harmonizações?</summary>
+                    <p>
+                        Sim. Desenvolvemos experiências enogastronômicas para
+                        eventos, restaurantes e vinícolas.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Como posso entrar em contato?</summary>
+                    <p>
+                        Você pode utilizar a página de contato do site ou nossos
+                        canais de atendimento para solicitar um orçamento.
+                    </p>
+                </details>
+
+            </div>
+
+        </div>
+    </section>
 
     <footer class="rodape">
         <div class="rodape-estrutura">
@@ -111,13 +295,12 @@
             </div>
 
             <div class="rodape-menu">
-                <nav class="rodape-coluna coluna-navegacao" aria-label="Links do site">
+                <nav class="rodape-coluna coluna-navegacao">
                     <div class="rodape-titulo-coluna">Links</div>
                     <ul class="rodape-lista-coluna">
-                        <li><a href="index.html" aria-current="page">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="paginas/sobre.html">Sobre</a></li>
                         <li><a href="paginas/servicos.html">Serviços</a></li>
-                        <li><a href="paginas/projetos.html">Projetos</a></li>
                         <li><a href="paginas/contato.html">Contato</a></li>
                     </ul>
                 </nav>
@@ -133,23 +316,19 @@
                 <div class="rodape-coluna coluna-redes">
                     <div class="rodape-titulo-coluna">Redes Sociais</div>
                     <div class="redes-sociais">
-                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
-                            class="rede-social" aria-label="Instagram">
-                            <img src="recursos/icones/instagram.png" alt="" width="32" height="32">
+                        <a href="https://www.instagram.com/" target="_blank" class="rede-social">
+                            <img src="recursos/icones/instagram.png" alt="">
                         </a>
-                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
-                            class="rede-social" aria-label="Facebook">
-                            <img src="recursos/icones/facebook.png" alt="" width="32" height="32">
+                        <a href="https://www.facebook.com/" target="_blank" class="rede-social">
+                            <img src="recursos/icones/facebook.png" alt="">
                         </a>
-                        <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer"
-                            class="rede-social" aria-label="WhatsApp">
-                            <img src="recursos/icones/whatsapp.png" alt="" width="32" height="32">
+                        <a href="https://wa.me/5511999999999" target="_blank" class="rede-social">
+                            <img src="recursos/icones/whatsapp.png" alt="">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-        <p class="rodape-credito">&copy; 2026 Leonardo Gabriel</p>
     </footer>
 
 </body>
